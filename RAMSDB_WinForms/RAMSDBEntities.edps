@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDeveloper Version="6.12.1354.0">
+  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" AppConnectionStringName="RAMSDBEntitiesConnectionString" ConnectionStringInAppConfig="True" RegenareteConnectionStringInAppConfig="True" TargetFramework="Net45" DetectTPTInheritance="False" EntityFrameworkVersion="Version6" IncludeForeignKeysInModel="true" DetectFunctionBasedColumnDefault="true">
+    <Connection ConnectionString="Data Source=(localdb)\MSSQLLocaldb;Initial Catalog=RAMSDB;Integrated Security=True;Persist Security Info=True" Provider="System.Data.SqlClient" />
+    <Generation>
+      <GeneratedFiles>
+        <File Name="RAMSDBEntities.cs" ProjectFolder="Context" />
+        <File Name="RAMSDBEntities.ObservableListSource.cs" ProjectFolder="Entities" />
+        <File Name="AdminBoundary.cs" ProjectFolder="Entities" />
+        <File Name="AnnualRoadExpenditurePlan.cs" ProjectFolder="Entities" />
+        <File Name="AnnualRoadWorkPlan.cs" ProjectFolder="Entities" />
+        <File Name="Condition.cs" ProjectFolder="Entities" />
+        <File Name="ContractPeformancePeriodiMSpotRRehab.cs" ProjectFolder="Entities" />
+        <File Name="ContractPeformanceRoutineMaintenance.cs" ProjectFolder="Entities" />
+        <File Name="ContractPeriodiMSpotRRehab.cs" ProjectFolder="Entities" />
+        <File Name="ContractRoutineMaintenance.cs" ProjectFolder="Entities" />
+        <File Name="CooperativeCentersAlongRoad.cs" ProjectFolder="Entities" />
+        <File Name="CriteriaWeight.cs" ProjectFolder="Entities" />
+        <File Name="EducationCentersAlongRoad.cs" ProjectFolder="Entities" />
+        <File Name="HealthCentersAlongRoad.cs" ProjectFolder="Entities" />
+        <File Name="KebelesVillagesCommunitiesConnected.cs" ProjectFolder="Entities" />
+        <File Name="MaintenanceBranch.cs" ProjectFolder="Entities" />
+        <File Name="MarketsConnectByRoad.cs" ProjectFolder="Entities" />
+        <File Name="MultiCriteriaAnalysisData.cs" ProjectFolder="Entities" />
+        <File Name="OfficeSupplyAdminCost.cs" ProjectFolder="Entities" />
+        <File Name="OtherProjectsAlongRoad.cs" ProjectFolder="Entities" />
+        <File Name="PavedCarriagewayCracking.cs" ProjectFolder="Entities" />
+        <File Name="PavedCarriagewayFailure.cs" ProjectFolder="Entities" />
+        <File Name="PavedCarriagewayPotholes.cs" ProjectFolder="Entities" />
+        <File Name="PavedCarriagewayRavellingBleeding.cs" ProjectFolder="Entities" />
+        <File Name="PavedCarriagewayRutting.cs" ProjectFolder="Entities" />
+        <File Name="PavedCategoryofWork.cs" ProjectFolder="Entities" />
+        <File Name="PavedOverallCondition.cs" ProjectFolder="Entities" />
+        <File Name="PavedRoadConditionSurvey.cs" ProjectFolder="Entities" />
+        <File Name="PavedRoadSurfaceType.cs" ProjectFolder="Entities" />
+        <File Name="PavedRoadUnitCost.cs" ProjectFolder="Entities" />
+        <File Name="PavedShoulderDeformationScour.cs" ProjectFolder="Entities" />
+        <File Name="PavedShoulderEdgeDamage.cs" ProjectFolder="Entities" />
+        <File Name="PavedShoulderEdgeStep.cs" ProjectFolder="Entities" />
+        <File Name="PavedSideDrainScour.cs" ProjectFolder="Entities" />
+        <File Name="PavedSideDrainSilt.cs" ProjectFolder="Entities" />
+        <File Name="PavedTentativeRoadMaintenancePlan.cs" ProjectFolder="Entities" />
+        <File Name="PavedVegetationControl.cs" ProjectFolder="Entities" />
+        <File Name="PrioritizedRoads.cs" ProjectFolder="Entities" />
+        <File Name="RoadAccessoriesFurnitures.cs" ProjectFolder="Entities" />
+        <File Name="RoadClassification.cs" ProjectFolder="Entities" />
+        <File Name="RoadsCrossingWoredas.cs" ProjectFolder="Entities" />
+        <File Name="RoadsGISData.cs" ProjectFolder="Entities" />
+        <File Name="RoadsPerUser.cs" ProjectFolder="Entities" />
+        <File Name="RoadSurfaceType.cs" ProjectFolder="Entities" />
+        <File Name="RoadTraversesFarmland.cs" ProjectFolder="Entities" />
+        <File Name="RoadTypePavedUnpaved.cs" ProjectFolder="Entities" />
+        <File Name="RoadWorkFunding.cs" ProjectFolder="Entities" />
+        <File Name="Role.cs" ProjectFolder="Entities" />
+        <File Name="ShapesCollection.cs" ProjectFolder="Entities" />
+        <File Name="StructureConditionSurvey.cs" ProjectFolder="Entities" />
+        <File Name="StructuresInventory.cs" ProjectFolder="Entities" />
+        <File Name="TradingCentersAlongRoad.cs" ProjectFolder="Entities" />
+        <File Name="TrafficCountHour.cs" ProjectFolder="Entities" />
+        <File Name="TrafficPerDayPoints.cs" ProjectFolder="Entities" />
+        <File Name="TrafficSurvey.cs" ProjectFolder="Entities" />
+        <File Name="UnpavedCategoryofWork.cs" ProjectFolder="Entities" />
+        <File Name="UnpavedRoadConditionSurvey.cs" ProjectFolder="Entities" />
+        <File Name="UnpavedRoadUnitCost.cs" ProjectFolder="Entities" />
+        <File Name="UnpavedTentativeRoadMaintenancePlan.cs" ProjectFolder="Entities" />
+        <File Name="User.cs" ProjectFolder="Entities" />
+        <File Name="UserRole.cs" ProjectFolder="Entities" />
+        <File Name="VehicleType.cs" ProjectFolder="Entities" />
+        <File Name="YearConditionSurveyConducted.cs" ProjectFolder="Entities" />
+        <File Name="IUnitOfWork.cs" ProjectFolder="IRepository" />
+        <File Name="IUnitOfWorkFactory.cs" ProjectFolder="IRepository" />
+        <File Name="IRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IAdminBoundaryRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IAnnualRoadExpenditurePlanRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IAnnualRoadWorkPlanRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IConditionRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IContractPeformancePeriodiMSpotRRehabRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IContractPeformanceRoutineMaintenanceRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IContractPeriodiMSpotRRehabRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IContractRoutineMaintenanceRepository.cs" ProjectFolder="IRepository" />
+        <File Name="ICooperativeCentersAlongRoadRepository.cs" ProjectFolder="IRepository" />
+        <File Name="ICriteriaWeightRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IEducationCentersAlongRoadRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IHealthCentersAlongRoadRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IKebelesVillagesCommunitiesConnectedRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IMaintenanceBranchRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IMarketsConnectByRoadRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IMultiCriteriaAnalysisDataRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IOfficeSupplyAdminCostRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IOtherProjectsAlongRoadRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedCarriagewayCrackingRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedCarriagewayFailureRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedCarriagewayPotholesRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedCarriagewayRavellingBleedingRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedCarriagewayRuttingRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedCategoryofWorkRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedOverallConditionRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedRoadConditionSurveyRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedRoadSurfaceTypeRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedRoadUnitCostRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedShoulderDeformationScourRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedShoulderEdgeDamageRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedShoulderEdgeStepRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedSideDrainScourRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedSideDrainSiltRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedTentativeRoadMaintenancePlanRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPavedVegetationControlRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IPrioritizedRoadsRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadAccessoriesFurnituresRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadClassificationRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadsCrossingWoredasRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadsGISDataRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadsPerUserRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadSurfaceTypeRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadTraversesFarmlandRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadTypePavedUnpavedRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoadWorkFundingRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IRoleRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IShapesCollectionRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IStructureConditionSurveyRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IStructuresInventoryRepository.cs" ProjectFolder="IRepository" />
+        <File Name="ITradingCentersAlongRoadRepository.cs" ProjectFolder="IRepository" />
+        <File Name="ITrafficCountHourRepository.cs" ProjectFolder="IRepository" />
+        <File Name="ITrafficPerDayPointsRepository.cs" ProjectFolder="IRepository" />
+        <File Name="ITrafficSurveyRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IUnpavedCategoryofWorkRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IUnpavedRoadConditionSurveyRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IUnpavedRoadUnitCostRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IUnpavedTentativeRoadMaintenancePlanRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IUserRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IUserRoleRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IVehicleTypeRepository.cs" ProjectFolder="IRepository" />
+        <File Name="IYearConditionSurveyConductedRepository.cs" ProjectFolder="IRepository" />
+        <File Name="EntityFrameworkRepository.cs" ProjectFolder="Data" />
+        <File Name="EntityFrameworkUnitOfWork.cs" ProjectFolder="Data" />
+        <File Name="EntityFrameworkUnitOfWorkFactory.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.AdminBoundaryRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.AnnualRoadExpenditurePlanRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.AnnualRoadWorkPlanRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.ConditionRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.ContractPeformancePeriodiMSpotRRehabRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.ContractPeformanceRoutineMaintenanceRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.ContractPeriodiMSpotRRehabRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.ContractRoutineMaintenanceRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.CooperativeCentersAlongRoadRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.CriteriaWeightRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.EducationCentersAlongRoadRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.HealthCentersAlongRoadRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.KebelesVillagesCommunitiesConnectedRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.MaintenanceBranchRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.MarketsConnectByRoadRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.MultiCriteriaAnalysisDataRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.OfficeSupplyAdminCostRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.OtherProjectsAlongRoadRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedCarriagewayCrackingRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedCarriagewayFailureRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedCarriagewayPotholesRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedCarriagewayRavellingBleedingRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedCarriagewayRuttingRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedCategoryofWorkRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedOverallConditionRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedRoadConditionSurveyRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedRoadSurfaceTypeRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedRoadUnitCostRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedShoulderDeformationScourRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedShoulderEdgeDamageRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedShoulderEdgeStepRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedSideDrainScourRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedSideDrainSiltRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedTentativeRoadMaintenancePlanRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PavedVegetationControlRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.PrioritizedRoadsRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadAccessoriesFurnituresRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadClassificationRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadsCrossingWoredasRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadsGISDataRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadsPerUserRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadSurfaceTypeRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadTraversesFarmlandRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadTypePavedUnpavedRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoadWorkFundingRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.RoleRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.ShapesCollectionRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.StructureConditionSurveyRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.StructuresInventoryRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.TradingCentersAlongRoadRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.TrafficCountHourRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.TrafficPerDayPointsRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.TrafficSurveyRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.UnpavedCategoryofWorkRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.UnpavedRoadConditionSurveyRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.UnpavedRoadUnitCostRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.UnpavedTentativeRoadMaintenancePlanRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.UserRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.UserRoleRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.VehicleTypeRepository.cs" ProjectFolder="Data" />
+        <File Name="RAMSDBEntities.YearConditionSurveyConductedRepository.cs" ProjectFolder="Data" />
+      </GeneratedFiles>
+    </Generation>
+    <DatabaseFirstNamingRules>
+      <EntitySet PluralizationName="Unchanged" />
+      <Class UseSchemaAsPrefix="False" PluralizeCollectionNavigationPropertyName="True" AddConstraintColumnsToNavigationPropertyName="False" RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="FirstLetterUppercase" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      <Property RemoveUnderscores="True" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="FirstLetterUppercase" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+    </DatabaseFirstNamingRules>
+    <ModelFirst StorageSynchronizationEnabled="False" TargetSchema="dbo" TargetProviderName="System.Data.SqlClient">
+      <TargetServer Server="SQL Server" ServerVersion="2019" />
+      <ModelFirstNamingRules>
+        <Table RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Pluralize" />
+        <Column RemoveUnderscores="False" AddUnderscores="False" RemoveInvalidCharacters="True" CodeCase="Unchanged" AddPrefix="" AddSuffix="" RemovePrefixes="" RemoveSuffixes="" PluralizationName="Unchanged" />
+      </ModelFirstNamingRules>
+    </ModelFirst>
+    <Diagrams>
+      <Diagram Name="Diagram1" DefaultDiagram="True" />
+    </Diagrams>
+    <Templates>
+      <Template Name="DbContext" Description="Use this template to generate a strongly-typed DbContext class and persistence ignorant entity classes." Enabled="True" PredefinedTemplateName="Entity DbContext C#">
+        <ed:Property Name="ValidationFramework" Type="EntityDeveloper.TemplateEngine.ValidationFramework, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationFramework>None</ValidationFramework>
+        </ed:Property>
+        <ed:Property Name="ValidationErrorMessages" Type="EntityDeveloper.TemplateEngine.ValidationErrorMessages, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ValidationErrorMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </ed:Property>
+        <ed:Property Name="FilePerClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ModelNameAsFilesPrefix" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="HeaderTimestampVersionControlTag" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="EntitiesOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder>Entities</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="ContextOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder>Context</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="GeneratePartialClass" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementCloneable" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementEquals" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementINotifyPropertyChanging" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ImplementINotifyPropertyChanged" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="PropertyChangePartialMethods" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateDummyComments" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="GenerateGeneratedCodeAttributes" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="PrimitiveDefaultValueGeneration" Type="EntityDeveloper.DefaultValueBehavior, EntityDeveloper.Orm.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <DefaultValueBehavior>Literal</DefaultValueBehavior>
+        </ed:Property>
+        <ed:Property Name="NullableReferenceTypes" Type="EntityDeveloper.ReferenceTypeNullability, EntityDeveloper.Orm.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <ReferenceTypeNullability>Default</ReferenceTypeNullability>
+        </ed:Property>
+        <ed:Property Name="EnableWinFormsDataBinding" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="UseObservableCollection" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="CollectionPropertyType" Type="EntityDeveloper.EntityFramework.EntityCollectionPropertyType, EntityDeveloper.Orm.EntityFramework, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <EntityCollectionPropertyType>Default</EntityCollectionPropertyType>
+        </ed:Property>
+        <ed:Property Name="CollectionInitializationType" Type="EntityDeveloper.EntityFramework.EntityCollectionInitializationType, EntityDeveloper.Orm.EntityFramework, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <EntityCollectionInitializationType>Default</EntityCollectionInitializationType>
+        </ed:Property>
+        <ed:Property Name="FluentMapping" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="MappingGenerationStrategy" Type="EntityDeveloper.EntityFramework.CodeFirstMappingGenerationStrategy, EntityDeveloper.Orm.EntityFramework, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <CodeFirstMappingGenerationStrategy>UseAttributes</CodeFirstMappingGenerationStrategy>
+        </ed:Property>
+        <ed:Property Name="DatabaseIndependent" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="DisabledConventions" Type="EntityDeveloper.EntityFramework.CodeFirstConfigurationConvention, EntityDeveloper.Orm.EntityFramework, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <CodeFirstConfigurationConvention />
+        </ed:Property>
+        <ed:Property Name="ConfigurationsOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder />
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="AutoDetectChangesEnabled" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ProxyCreationEnabled" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="ValidateOnSaveEnabled" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="JsonFileBasePath" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="IncludeEnvironmentVariables" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="ConfigurationTypeName" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>%Default%</string>
+        </ed:Property>
+        <ed:Property Name="UseDbConfigurationTypeAttribute" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="SerializationLibrary" Type="EntityDeveloper.SerializationLibrary, EntityDeveloper.Orm.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <SerializationLibrary>None</SerializationLibrary>
+        </ed:Property>
+        <ed:Property Name="SerializeOriginalColumnNames" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="SerializeNullValues" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="SerializeNavigationProperties" Type="EntityDeveloper.NavigationPropertySerializationBehavior, EntityDeveloper.Orm.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <NavigationPropertySerializationBehavior>All</NavigationPropertySerializationBehavior>
+        </ed:Property>
+        <ed:Property Name="WcfDataContractAttributes" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="WcfDataMemberOnNavigationProperties" Type="EntityDeveloper.WcfDataMemberGenerationBehavior, EntityDeveloper.Orm.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <WcfDataMemberGenerationBehavior>All</WcfDataMemberGenerationBehavior>
+        </ed:Property>
+      </Template>
+      <Template Name="Repository And Unit of Work" Description="Use this template to generate Repositories and a Unit of Work for Entity Framework model." Enabled="True" PredefinedTemplateName="Repository And Unit of Work C#">
+        <ed:Property Name="InterfaceLayerOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder>IRepository</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="DataAccessLayerOutput" Type="EntityDeveloper.TemplateEngine.OutputInfo, EntityDeveloper.Common, Version=6.12.1354.0, Culture=neutral, PublicKeyToken=09af7300eec23701">
+          <OutputInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Project />
+            <ProjectFolder>Data</ProjectFolder>
+            <DestinationFolder />
+          </OutputInfo>
+        </ed:Property>
+        <ed:Property Name="GeneratePartial" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="InterfaceLayerNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>RAMSDB.Interface</string>
+        </ed:Property>
+        <ed:Property Name="DataAccessLayerNamespace" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string>RAMSDB.Data</string>
+        </ed:Property>
+        <ed:Property Name="HeaderTimestampVersionControlTag" Type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <string d6p1:nil="true" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance" />
+        </ed:Property>
+        <ed:Property Name="GenerateMemoryRepository" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+        <ed:Property Name="UseDbContext" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>true</boolean>
+        </ed:Property>
+        <ed:Property Name="GenericRepositoryPattern" Type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <boolean>false</boolean>
+        </ed:Property>
+      </Template>
+    </Templates>
+    <AttributeAssemblies />
+  </ModelSettings>
+</EntityDeveloper>

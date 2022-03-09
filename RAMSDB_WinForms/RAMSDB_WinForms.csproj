@@ -1,0 +1,1182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D92C505-D0DC-4ADF-B674-80D525AF455A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RAMSDB_WinForms</RootNamespace>
+    <AssemblyName>RAMSDB_WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.3.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Road.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6DBAE0F483B9FCAC73F245353CF059D846B80730</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RAMSDB_WinForms_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Images.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Map.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1.UI, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DotNetZip, Version=1.13.8.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.13.8\lib\net40\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\AdminNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\AdminNavigation.Designer.cs">
+      <DependentUpon>AdminNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AssignRoads.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\AssignRoads.Designer.cs">
+      <DependentUpon>AssignRoads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ExportData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\ExportData.Designer.cs">
+      <DependentUpon>ExportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ExportInitializationData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\ExportInitializationData.Designer.cs">
+      <DependentUpon>ExportInitializationData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ImportData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\ImportData.Designer.cs">
+      <DependentUpon>ImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ImportInitializationData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\ImportInitializationData.Designer.cs">
+      <DependentUpon>ImportInitializationData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageRoads.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageRoads.Designer.cs">
+      <DependentUpon>ManageRoads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ManageUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\RoadWorkUnitCostAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administration\RoadWorkUnitCostAdmin.Designer.cs">
+      <DependentUpon>RoadWorkUnitCostAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\UserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\UserAdmin.Designer.cs">
+      <DependentUpon>UserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Context\RAMSDBEntities.cs" />
+    <Compile Include="Data\EntityFrameworkRepository.cs" />
+    <Compile Include="Data\EntityFrameworkUnitOfWork.cs" />
+    <Compile Include="Data\EntityFrameworkUnitOfWorkFactory.cs" />
+    <Compile Include="Data\RAMSDBEntities.AdminBoundaryRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.AnnualRoadExpenditurePlanRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.AnnualRoadWorkPlanRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.ConditionRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.ContractPeformancePeriodiMSpotRRehabRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.ContractPeformanceRoutineMaintenanceRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.ContractPeriodiMSpotRRehabRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.ContractRoutineMaintenanceRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.CooperativeCentersAlongRoadRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.CriteriaWeightRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.EducationCentersAlongRoadRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.HealthCentersAlongRoadRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.KebelesVillagesCommunitiesConnectedRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.MaintenanceBranchRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.MarketsConnectByRoadRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.MultiCriteriaAnalysisDataRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.OfficeSupplyAdminCostRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.OtherProjectsAlongRoadRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedCarriagewayCrackingRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedCarriagewayFailureRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedCarriagewayPotholesRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedCarriagewayRavellingBleedingRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedCarriagewayRuttingRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedCategoryofWorkRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedOverallConditionRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedRoadConditionSurveyRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedRoadSurfaceTypeRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedRoadUnitCostRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedShoulderDeformationScourRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedShoulderEdgeDamageRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedShoulderEdgeStepRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedSideDrainScourRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedSideDrainSiltRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedTentativeRoadMaintenancePlanRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PavedVegetationControlRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.PrioritizedRoadsRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadAccessoriesFurnituresRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadClassificationRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadsCrossingWoredasRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadsGISDataRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadsPerUserRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadSurfaceTypeRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadTraversesFarmlandRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadTypePavedUnpavedRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoadWorkFundingRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.RoleRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.ShapesCollectionRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.StructureConditionSurveyRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.StructuresInventoryRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.TradingCentersAlongRoadRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.TrafficCountHourRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.TrafficPerDayPointsRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.TrafficSurveyRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.UnpavedCategoryofWorkRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.UnpavedRoadConditionSurveyRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.UnpavedRoadUnitCostRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.UnpavedTentativeRoadMaintenancePlanRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.UserRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.UserRoleRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.VehicleTypeRepository.cs" />
+    <Compile Include="Data\RAMSDBEntities.YearConditionSurveyConductedRepository.cs" />
+    <Compile Include="Entities\AdminBoundary.cs" />
+    <Compile Include="Entities\AnnualRoadExpenditurePlan.cs" />
+    <Compile Include="Entities\AnnualRoadWorkPlan.cs" />
+    <Compile Include="Entities\Condition.cs" />
+    <Compile Include="Entities\ContractPeformancePeriodiMSpotRRehab.cs" />
+    <Compile Include="Entities\ContractPeformanceRoutineMaintenance.cs" />
+    <Compile Include="Entities\ContractPeriodiMSpotRRehab.cs" />
+    <Compile Include="Entities\ContractRoutineMaintenance.cs" />
+    <Compile Include="Entities\CooperativeCentersAlongRoad.cs" />
+    <Compile Include="Entities\CriteriaWeight.cs" />
+    <Compile Include="Entities\EducationCentersAlongRoad.cs" />
+    <Compile Include="Entities\HealthCentersAlongRoad.cs" />
+    <Compile Include="Entities\KebelesVillagesCommunitiesConnected.cs" />
+    <Compile Include="Entities\MaintenanceBranch.cs" />
+    <Compile Include="Entities\MarketsConnectByRoad.cs" />
+    <Compile Include="Entities\MultiCriteriaAnalysisData.cs" />
+    <Compile Include="Entities\OfficeSupplyAdminCost.cs" />
+    <Compile Include="Entities\OtherProjectsAlongRoad.cs" />
+    <Compile Include="Entities\PavedCarriagewayCracking.cs" />
+    <Compile Include="Entities\PavedCarriagewayFailure.cs" />
+    <Compile Include="Entities\PavedCarriagewayPotholes.cs" />
+    <Compile Include="Entities\PavedCarriagewayRavellingBleeding.cs" />
+    <Compile Include="Entities\PavedCarriagewayRutting.cs" />
+    <Compile Include="Entities\PavedCategoryofWork.cs" />
+    <Compile Include="Entities\PavedOverallCondition.cs" />
+    <Compile Include="Entities\PavedRoadConditionSurvey.cs" />
+    <Compile Include="Entities\PavedRoadSurfaceType.cs" />
+    <Compile Include="Entities\PavedRoadUnitCost.cs" />
+    <Compile Include="Entities\PavedShoulderDeformationScour.cs" />
+    <Compile Include="Entities\PavedShoulderEdgeDamage.cs" />
+    <Compile Include="Entities\PavedShoulderEdgeStep.cs" />
+    <Compile Include="Entities\PavedSideDrainScour.cs" />
+    <Compile Include="Entities\PavedSideDrainSilt.cs" />
+    <Compile Include="Entities\PavedTentativeRoadMaintenancePlan.cs" />
+    <Compile Include="Entities\PavedVegetationControl.cs" />
+    <Compile Include="Entities\PrioritizedRoads.cs" />
+    <Compile Include="Entities\RAMSDBEntities.ObservableListSource.cs" />
+    <Compile Include="Entities\RoadAccessoriesFurnitures.cs" />
+    <Compile Include="Entities\RoadClassification.cs" />
+    <Compile Include="Entities\RoadsCrossingWoredas.cs" />
+    <Compile Include="Entities\RoadsGISData.cs" />
+    <Compile Include="Entities\RoadsPerUser.cs" />
+    <Compile Include="Entities\RoadSurfaceType.cs" />
+    <Compile Include="Entities\RoadTraversesFarmland.cs" />
+    <Compile Include="Entities\RoadTypePavedUnpaved.cs" />
+    <Compile Include="Entities\RoadWorkFunding.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\ShapesCollection.cs" />
+    <Compile Include="Entities\StructureConditionSurvey.cs" />
+    <Compile Include="Entities\StructuresInventory.cs" />
+    <Compile Include="Entities\TradingCentersAlongRoad.cs" />
+    <Compile Include="Entities\TrafficCountHour.cs" />
+    <Compile Include="Entities\TrafficPerDayPoints.cs" />
+    <Compile Include="Entities\TrafficScoreCalculationResult.cs" />
+    <Compile Include="Entities\TrafficSurvey.cs" />
+    <Compile Include="Entities\UnpavedCategoryofWork.cs" />
+    <Compile Include="Entities\UnpavedRoadConditionSurvey.cs" />
+    <Compile Include="Entities\UnpavedRoadUnitCost.cs" />
+    <Compile Include="Entities\UnpavedTentativeRoadMaintenancePlan.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserRole.cs" />
+    <Compile Include="Entities\VehicleType.cs" />
+    <Compile Include="Entities\YearConditionSurveyConducted.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForTesting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForTesting.Designer.cs">
+      <DependentUpon>FormForTesting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPContractProgressReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPContractProgressReport.Designer.cs">
+      <DependentUpon>frmPContractProgressReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPContractProgressRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPContractProgressRpt.Designer.cs">
+      <DependentUpon>frmPContractProgressRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnpavedAnnualPlanReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmUnpavedAnnualPlanReport.Designer.cs">
+      <DependentUpon>frmUnpavedAnnualPlanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridCheckMarksSelection.cs" />
+    <Compile Include="IRepository\IAnnualRoadExpenditurePlanRepository.cs" />
+    <Compile Include="IRepository\IAnnualRoadWorkPlanRepository.cs" />
+    <Compile Include="IRepository\IContractPeformancePeriodiMSpotRRehabRepository.cs" />
+    <Compile Include="IRepository\IContractPeformanceRoutineMaintenanceRepository.cs" />
+    <Compile Include="IRepository\IContractPeriodiMSpotRRehabRepository.cs" />
+    <Compile Include="IRepository\IContractRoutineMaintenanceRepository.cs" />
+    <Compile Include="IRepository\IMaintenanceBranchRepository.cs" />
+    <Compile Include="IRepository\IMultiCriteriaAnalysisDataRepository.cs" />
+    <Compile Include="IRepository\IOfficeSupplyAdminCostRepository.cs" />
+    <Compile Include="IRepository\IPavedCarriagewayCrackingRepository.cs" />
+    <Compile Include="IRepository\IPavedCarriagewayFailureRepository.cs" />
+    <Compile Include="IRepository\IPavedCarriagewayPotholesRepository.cs" />
+    <Compile Include="IRepository\IPavedCarriagewayRavellingBleedingRepository.cs" />
+    <Compile Include="IRepository\IPavedCarriagewayRuttingRepository.cs" />
+    <Compile Include="IRepository\IPavedCategoryofWorkRepository.cs" />
+    <Compile Include="IRepository\IPavedOverallConditionRepository.cs" />
+    <Compile Include="IRepository\IPavedRoadConditionSurveyRepository.cs" />
+    <Compile Include="IRepository\IPavedRoadSurfaceTypeRepository.cs" />
+    <Compile Include="IRepository\IPavedRoadUnitCostRepository.cs" />
+    <Compile Include="IRepository\IPavedShoulderDeformationScourRepository.cs" />
+    <Compile Include="IRepository\IPavedShoulderEdgeDamageRepository.cs" />
+    <Compile Include="IRepository\IPavedShoulderEdgeStepRepository.cs" />
+    <Compile Include="IRepository\IPavedSideDrainScourRepository.cs" />
+    <Compile Include="IRepository\IPavedSideDrainSiltRepository.cs" />
+    <Compile Include="IRepository\IPavedTentativeRoadMaintenancePlanRepository.cs" />
+    <Compile Include="IRepository\IPavedVegetationControlRepository.cs" />
+    <Compile Include="IRepository\IPrioritizedRoadsRepository.cs" />
+    <Compile Include="IRepository\IRoadAccessoriesFurnituresRepository.cs" />
+    <Compile Include="IRepository\IRoadsCrossingWoredasRepository.cs" />
+    <Compile Include="IRepository\IRoadTypePavedUnpavedRepository.cs" />
+    <Compile Include="IRepository\IRoadWorkFundingRepository.cs" />
+    <Compile Include="IRepository\IStructureConditionSurveyRepository.cs" />
+    <Compile Include="IRepository\IStructuresInventoryRepository.cs" />
+    <Compile Include="IRepository\IUnpavedCategoryofWorkRepository.cs" />
+    <Compile Include="IRepository\IUnpavedTentativeRoadMaintenancePlanRepository.cs" />
+    <Compile Include="LinqHelper.cs" />
+    <Compile Include="MapTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapTest.Designer.cs">
+      <DependentUpon>MapTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapViewer.Designer.cs">
+      <DependentUpon>MapViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedMainNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PavedMainNavigation.Designer.cs">
+      <DependentUpon>PavedMainNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedCreateTentativePlan.cs" />
+    <Compile Include="PavedRoads\PavedConditionSurveyView_Old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedConditionSurveyView_Old.Designer.cs">
+      <DependentUpon>PavedConditionSurveyView_Old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedConditionSurveyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedConditionSurveyView.Designer.cs">
+      <DependentUpon>PavedConditionSurveyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedMaintenanceConditionIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedMaintenanceConditionIndex.Designer.cs">
+      <DependentUpon>PavedMaintenanceConditionIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedPrioritizedRoads.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedPrioritizedRoads.Designer.cs">
+      <DependentUpon>PavedPrioritizedRoads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedRoadConditionSurveyFilters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedRoadConditionSurveyFilters.Designer.cs">
+      <DependentUpon>PavedRoadConditionSurveyFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedRoadPrioritizationClass.cs" />
+    <Compile Include="PavedRoads\PavedRoadsMaintenanceCostPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedRoadsMaintenanceCostPlan.Designer.cs">
+      <DependentUpon>PavedRoadsMaintenanceCostPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedRoadsMultiCriteriaAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedRoadsMultiCriteriaAnalysis.Designer.cs">
+      <DependentUpon>PavedRoadsMultiCriteriaAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PavedRoads\PavedTentativeRoadMaintenancePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PavedRoads\PavedTentativeRoadMaintenancePlan.Designer.cs">
+      <DependentUpon>PavedTentativeRoadMaintenancePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PContractProgressReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PContractProgressReport.Designer.cs">
+      <DependentUpon>PContractProgressReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPPMainNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPPMainNavigation.Designer.cs">
+      <DependentUpon>PPPMainNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\AllocationOfFundsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\AllocationOfFundsView.Designer.cs">
+      <DependentUpon>AllocationOfFundsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\AnnualExpenditurePlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\AnnualExpenditurePlan.Designer.cs">
+      <DependentUpon>AnnualExpenditurePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\AnnualWorkPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\AnnualWorkPlan.Designer.cs">
+      <DependentUpon>AnnualWorkPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\ContractPeformancePeriodiMSpotRRehabView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PPP\ContractPeformancePeriodiMSpotRRehabView.Designer.cs">
+      <DependentUpon>ContractPeformancePeriodiMSpotRRehabView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\ContractPeformanceRoutineMaintenanceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PPP\ContractPeformanceRoutineMaintenanceView.Designer.cs">
+      <DependentUpon>ContractPeformanceRoutineMaintenanceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\ContractPeriodiMSpotRRehabView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\ContractPeriodiMSpotRRehabView.Designer.cs">
+      <DependentUpon>ContractPeriodiMSpotRRehabView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\ContractRoutineMaintenanceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\ContractRoutineMaintenanceView.Designer.cs">
+      <DependentUpon>ContractRoutineMaintenanceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PPP\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\OfficeAdminCostView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\OfficeAdminCostView.Designer.cs">
+      <DependentUpon>OfficeAdminCostView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\RoadExpenditureProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\RoadExpenditureProgress.Designer.cs">
+      <DependentUpon>RoadExpenditureProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PPP\RoadWorkProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PPP\RoadWorkProgress.Designer.cs">
+      <DependentUpon>RoadWorkProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RoadsAssigned.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoadsAssigned.Designer.cs">
+      <DependentUpon>RoadsAssigned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoadsAssignedWidget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoadsAssignedWidget.Designer.cs">
+      <DependentUpon>RoadsAssignedWidget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\GridTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\GridTest.Designer.cs">
+      <DependentUpon>GridTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IRepository\IAdminBoundaryRepository.cs" />
+    <Compile Include="IRepository\IConditionRepository.cs" />
+    <Compile Include="IRepository\ICooperativeCentersAlongRoadRepository.cs" />
+    <Compile Include="IRepository\ICriteriaWeightRepository.cs" />
+    <Compile Include="IRepository\IEducationCentersAlongRoadRepository.cs" />
+    <Compile Include="IRepository\IHealthCentersAlongRoadRepository.cs" />
+    <Compile Include="IRepository\IKebelesVillagesCommunitiesConnectedRepository.cs" />
+    <Compile Include="IRepository\IMarketsConnectByRoadRepository.cs" />
+    <Compile Include="IRepository\IOtherProjectsAlongRoadRepository.cs" />
+    <Compile Include="IRepository\IRepository.cs" />
+    <Compile Include="IRepository\IRoadClassificationRepository.cs" />
+    <Compile Include="IRepository\IRoadsGISDataRepository.cs" />
+    <Compile Include="IRepository\IRoadsPerUserRepository.cs" />
+    <Compile Include="IRepository\IRoadSurfaceTypeRepository.cs" />
+    <Compile Include="IRepository\IRoadTraversesFarmlandRepository.cs" />
+    <Compile Include="IRepository\IRoleRepository.cs" />
+    <Compile Include="IRepository\IShapesCollectionRepository.cs" />
+    <Compile Include="IRepository\ITradingCentersAlongRoadRepository.cs" />
+    <Compile Include="IRepository\ITrafficCountHourRepository.cs" />
+    <Compile Include="IRepository\ITrafficPerDayPointsRepository.cs" />
+    <Compile Include="IRepository\ITrafficSurveyRepository.cs" />
+    <Compile Include="IRepository\IUnitOfWork.cs" />
+    <Compile Include="IRepository\IUnitOfWorkFactory.cs" />
+    <Compile Include="IRepository\IUnpavedRoadConditionSurveyRepository.cs" />
+    <Compile Include="IRepository\IUnpavedRoadUnitCostRepository.cs" />
+    <Compile Include="IRepository\IUserRepository.cs" />
+    <Compile Include="IRepository\IUserRoleRepository.cs" />
+    <Compile Include="IRepository\IVehicleTypeRepository.cs" />
+    <Compile Include="IRepository\IYearConditionSurveyConductedRepository.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainNavigation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainNavigation.Designer.cs">
+      <DependentUpon>MainNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\MaintenanceConditionIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\MaintenanceConditionIndex.Designer.cs">
+      <DependentUpon>MaintenanceConditionIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\TrafficSurvey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\TrafficSurvey.Designer.cs">
+      <DependentUpon>TrafficSurvey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedCreateTentativePlan.cs" />
+    <Compile Include="UnpavedRoads\UnpavedMultiCriteriaData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedMultiCriteriaData.Designer.cs">
+      <DependentUpon>UnpavedMultiCriteriaData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedPrioritizedRoads.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedPrioritizedRoads.Designer.cs">
+      <DependentUpon>UnpavedPrioritizedRoads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedRoadsMaintenanceCostPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedRoadsMaintenanceCostPlan.Designer.cs">
+      <DependentUpon>UnpavedRoadsMaintenanceCostPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopServed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PopServed.Designer.cs">
+      <DependentUpon>PopServed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="RAMSDBDataLoader.cs" />
+    <Compile Include="UnpavedRoads\UnpavedRoadsMultiCriteriaAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedRoadsMultiCriteriaAnalysis.Designer.cs">
+      <DependentUpon>UnpavedRoadsMultiCriteriaAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\TentativeRoadMaintenancePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\TentativeRoadMaintenancePlan.Designer.cs">
+      <DependentUpon>TentativeRoadMaintenancePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedRoadConditionSurveyFilters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedRoadConditionSurveyFilters.Designer.cs">
+      <DependentUpon>UnpavedRoadConditionSurveyFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedRoadPrioritizationClass.cs" />
+    <Compile Include="UnpavedRoads\UnpavedRoadResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedRoadResults.Designer.cs">
+      <DependentUpon>UnpavedRoadResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedConditionSurveyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnpavedRoads\UnpavedConditionSurveyView.Designer.cs">
+      <DependentUpon>UnpavedConditionSurveyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\AssignRoadsToUsersVM.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="Views\CommonViews\RoadAccessoriesFurnituresView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CommonViews\RoadAccessoriesFurnituresView.Designer.cs">
+      <DependentUpon>RoadAccessoriesFurnituresView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommonViews\StructureConditionSurveyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CommonViews\StructureConditionSurveyView.Designer.cs">
+      <DependentUpon>StructureConditionSurveyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommonViews\StructuresInventoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CommonViews\StructuresInventoryView.Designer.cs">
+      <DependentUpon>StructuresInventoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ListofRoadsAssigned.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ListofRoadsAssigned.Designer.cs">
+      <DependentUpon>ListofRoadsAssigned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucNumOfRoads.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucNumOfRoads.Designer.cs">
+      <DependentUpon>ucNumOfRoads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucRoadLength.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucRoadLength.Designer.cs">
+      <DependentUpon>ucRoadLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucSurfaceType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucSurfaceType.Designer.cs">
+      <DependentUpon>ucSurfaceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucClassification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RoadsAssignedWidgetView\ucClassification.Designer.cs">
+      <DependentUpon>ucClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WoredaDataPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WoredaDataPerson.Designer.cs">
+      <DependentUpon>WoredaDataPerson.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administration\AdminNavigation.resx">
+      <DependentUpon>AdminNavigation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\AssignRoads.resx">
+      <DependentUpon>AssignRoads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ExportData.resx">
+      <DependentUpon>ExportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ExportInitializationData.resx">
+      <DependentUpon>ExportInitializationData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ImportData.resx">
+      <DependentUpon>ImportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ImportInitializationData.resx">
+      <DependentUpon>ImportInitializationData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ManageRoads.resx">
+      <DependentUpon>ManageRoads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\RoadWorkUnitCostAdmin.resx">
+      <DependentUpon>RoadWorkUnitCostAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\UserAdmin.resx">
+      <DependentUpon>UserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormForTesting.resx">
+      <DependentUpon>FormForTesting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPContractProgressReport.resx">
+      <DependentUpon>frmPContractProgressReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPContractProgressRpt.resx">
+      <DependentUpon>frmPContractProgressRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnpavedAnnualPlanReport.resx">
+      <DependentUpon>frmUnpavedAnnualPlanReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapTest.resx">
+      <DependentUpon>MapTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapViewer.resx">
+      <DependentUpon>MapViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedMainNavigation.resx">
+      <DependentUpon>PavedMainNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedConditionSurveyView_Old.resx">
+      <DependentUpon>PavedConditionSurveyView_Old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedConditionSurveyView.resx">
+      <DependentUpon>PavedConditionSurveyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedMaintenanceConditionIndex.resx">
+      <DependentUpon>PavedMaintenanceConditionIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedPrioritizedRoads.resx">
+      <DependentUpon>PavedPrioritizedRoads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedRoadConditionSurveyFilters.resx">
+      <DependentUpon>PavedRoadConditionSurveyFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedRoadsMaintenanceCostPlan.resx">
+      <DependentUpon>PavedRoadsMaintenanceCostPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedRoadsMultiCriteriaAnalysis.resx">
+      <DependentUpon>PavedRoadsMultiCriteriaAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PavedRoads\PavedTentativeRoadMaintenancePlan.resx">
+      <DependentUpon>PavedTentativeRoadMaintenancePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PContractProgressReport.resx">
+      <DependentUpon>PContractProgressReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPPMainNavigation.resx">
+      <DependentUpon>PPPMainNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\AllocationOfFundsView.resx">
+      <DependentUpon>AllocationOfFundsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\AnnualExpenditurePlan.resx">
+      <DependentUpon>AnnualExpenditurePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\AnnualWorkPlan.resx">
+      <DependentUpon>AnnualWorkPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\ContractPeformancePeriodiMSpotRRehabView.resx">
+      <DependentUpon>ContractPeformancePeriodiMSpotRRehabView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\ContractPeformanceRoutineMaintenanceView.resx">
+      <DependentUpon>ContractPeformanceRoutineMaintenanceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\ContractPeriodiMSpotRRehabView.resx">
+      <DependentUpon>ContractPeriodiMSpotRRehabView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\ContractRoutineMaintenanceView.resx">
+      <DependentUpon>ContractRoutineMaintenanceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\OfficeAdminCostView.resx">
+      <DependentUpon>OfficeAdminCostView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\RoadExpenditureProgress.resx">
+      <DependentUpon>RoadExpenditureProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPP\RoadWorkProgress.resx">
+      <DependentUpon>RoadWorkProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadsAssigned.resx">
+      <DependentUpon>RoadsAssigned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadsAssignedWidget.resx">
+      <DependentUpon>RoadsAssignedWidget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\GridTest.resx">
+      <DependentUpon>GridTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainNavigation.resx">
+      <DependentUpon>MainNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\MaintenanceConditionIndex.resx">
+      <DependentUpon>MaintenanceConditionIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\TrafficSurvey.resx">
+      <DependentUpon>TrafficSurvey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\UnpavedMultiCriteriaData.resx">
+      <DependentUpon>UnpavedMultiCriteriaData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\UnpavedPrioritizedRoads.resx">
+      <DependentUpon>UnpavedPrioritizedRoads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\UnpavedRoadResults.resx">
+      <DependentUpon>UnpavedRoadResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\UnpavedRoadsMaintenanceCostPlan.resx">
+      <DependentUpon>UnpavedRoadsMaintenanceCostPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopServed.resx">
+      <DependentUpon>PopServed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\UnpavedRoadsMultiCriteriaAnalysis.resx">
+      <DependentUpon>UnpavedRoadsMultiCriteriaAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\TentativeRoadMaintenancePlan.resx">
+      <DependentUpon>TentativeRoadMaintenancePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\UnpavedRoadConditionSurveyFilters.resx">
+      <DependentUpon>UnpavedRoadConditionSurveyFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnpavedRoads\UnpavedConditionSurveyView.resx">
+      <DependentUpon>UnpavedConditionSurveyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CommonViews\RoadAccessoriesFurnituresView.resx">
+      <DependentUpon>RoadAccessoriesFurnituresView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CommonViews\StructureConditionSurveyView.resx">
+      <DependentUpon>StructureConditionSurveyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CommonViews\StructuresInventoryView.resx">
+      <DependentUpon>StructuresInventoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoadsAssignedWidgetView\ListofRoadsAssigned.resx">
+      <DependentUpon>ListofRoadsAssigned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoadsAssignedWidgetView\ucNumOfRoads.resx">
+      <DependentUpon>ucNumOfRoads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoadsAssignedWidgetView\ucRoadLength.resx">
+      <DependentUpon>ucRoadLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoadsAssignedWidgetView\ucSurfaceType.resx">
+      <DependentUpon>ucSurfaceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoadsAssignedWidgetView\ucClassification.resx">
+      <DependentUpon>ucClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WoredaDataPerson.resx">
+      <DependentUpon>WoredaDataPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\RAMSDB.Data.PrioritizedRoads.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.AdminBoundary.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.AnnualRoadExpenditurePlan.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.AnnualRoadWorkPlan.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.CategoryofWork.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.Condition.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.ContractPeformancePeriodiMSpotRRehab.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.ContractPeformanceRoutineMaintenance.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.ContractPeriodiMSpotRRehab.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.ContractRoutineMaintenance.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.CooperativeCentersAlongRoad.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.EducationCentersAlongRoad.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.HealthCentersAlongRoad.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.KebelesVillagesCommunitiesConnected.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.MarketsConnectByRoad.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.MultiCriteriaAnalysisData.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.OfficeSupplyAdminCost.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.OtherProjectsAlongRoad.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedCarriagewayCracking.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedCarriagewayFailure.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedCarriagewayPotholes.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedCarriagewayRavellingBleeding.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedCarriagewayRutting.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedCategoryofWork.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedEdgeDamage.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedEdgeStep.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedOverallCondition.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedRoadConditionSurvey.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedShoulderDeformationScour.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedShoulderEdgeDamage.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedShoulderEdgeStep.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedSideDrainScour.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedSideDrainSilt.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedTentativeRoadMaintenancePlan.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PavedVegetationControl.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.PrioritizedRoads.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadAccessoriesFurnitures.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadClassification.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadConditionSurveyUnpaved.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadsCrossingWoredas.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadsGISData.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadsPerUser.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadSurfaceType.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadTraversesFarmland.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadTypePavedUnpaved.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.RoadWorkFunding.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.Role.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.StructureConditionSurvey.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.StructuresInventory.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.TradingCentersAlongRoad.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.TrafficCountHour.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.TrafficSurvey.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.UnpavedRoadConditionSurvey.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.UnpavedTentativeRoadMaintenancePlan.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.User.datasource" />
+    <None Include="Properties\DataSources\RAMSDBModel.VehicleType.datasource" />
+    <None Include="Properties\DataSources\RAMSDB_WinForms.Data.RoadConditionSurveyUnpaved.datasource" />
+    <None Include="Properties\DataSources\RAMSDB_WinForms.ViewModel.AssignRoadsToUsersVM.AssignRoadsToUsersVM.datasource" />
+    <None Include="Properties\DataSources\RAMSDB_WinForms.ViewModel.AssignRoadsToUsersVM.DistinctZones.datasource" />
+    <None Include="Properties\DataSources\RAMSDB_WinForms.ViewModel.AssignRoadsToUsersVM.RoadClass.datasource" />
+    <None Include="Properties\DataSources\RAMSDB_WinForms.ViewModel.AssignRoadsToUsersVM.Woreda.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RAMSDBEntities.Diagram1.view">
+      <DependentUpon>RAMSDBEntities.edml</DependentUpon>
+    </None>
+    <DevartEntityDeploy Include="RAMSDBEntities.edml">
+      <Generator>DevartEfGenerator</Generator>
+      <LastGenOutput>RAMSDBEntities.info</LastGenOutput>
+    </DevartEntityDeploy>
+    <None Include="RAMSDBEntities.edps">
+      <DependentUpon>RAMSDBEntities.edml</DependentUpon>
+    </None>
+    <None Include="RAMSDBEntities.info">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RAMSDBEntities.edml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="DataDirectory\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unpavedRoad2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\saveas.svg" />
+    <None Include="Resources\saveas1.svg" />
+    <None Include="Resources\saveas2.svg" />
+    <Content Include="DotNetFX472\NDP472-KB4054530-x86-x64-AllOS-ENU.exe" />
+    <Content Include="Road.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="road-2-64.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\road-2-64.ico" />
+    <Content Include="road-2-16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.Map.v21.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DotNetFX472\NDP472-KB4054530-x86-x64-AllOS-ENU.exe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>
