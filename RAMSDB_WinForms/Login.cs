@@ -55,5 +55,10 @@ namespace RAMSDB_WinForms
                // PasswordTextEdit.EditValue = "";
             }
         }
+
+        private void tUserNameTextEdit_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }

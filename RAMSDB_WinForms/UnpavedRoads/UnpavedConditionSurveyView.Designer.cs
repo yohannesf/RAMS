@@ -150,6 +150,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
+            this.splitContainerControl1.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).BeginInit();
+            this.splitContainerControl1.Panel2.SuspendLayout();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -288,7 +292,7 @@
             this.repositoryItemComboBox1});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.Size = new System.Drawing.Size(931, 192);
+            this.ribbonControl.Size = new System.Drawing.Size(1273, 193);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -384,7 +388,7 @@
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(931, 28);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1273, 28);
             // 
             // unpavedRoadConditionSurveyBindingSource
             // 
@@ -394,10 +398,10 @@
             // 
             this.layoutControl1.Controls.Add(this.splitContainerControl1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 192);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 193);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(931, 517);
+            this.layoutControl1.Size = new System.Drawing.Size(1273, 516);
             this.layoutControl1.TabIndex = 11;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -406,13 +410,19 @@
             this.splitContainerControl1.Horizontal = false;
             this.splitContainerControl1.Location = new System.Drawing.Point(12, 12);
             this.splitContainerControl1.Name = "splitContainerControl1";
+            // 
+            // splitContainerControl1.Panel1
+            // 
             this.splitContainerControl1.Panel1.Controls.Add(this.labelControl1);
             this.splitContainerControl1.Panel1.Controls.Add(this.lblRoadOriginDestination);
             this.splitContainerControl1.Panel1.Controls.Add(this.layoutControl2);
             this.splitContainerControl1.Panel1.Text = "Panel1";
+            // 
+            // splitContainerControl1.Panel2
+            // 
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(907, 493);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1249, 492);
             this.splitContainerControl1.SplitterPosition = 112;
             this.splitContainerControl1.TabIndex = 4;
             // 
@@ -454,7 +464,7 @@
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(981, 0, 812, 500);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(907, 61);
+            this.layoutControl2.Size = new System.Drawing.Size(1249, 61);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -478,7 +488,7 @@
             this.simpleLabelItem5,
             this.simpleLabelItem6});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(907, 61);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1249, 61);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // lblLength
@@ -488,9 +498,9 @@
             this.lblLength.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
             this.lblLength.AppearanceItemCaption.Options.UseFont = true;
             this.lblLength.AppearanceItemCaption.Options.UseForeColor = true;
-            this.lblLength.Location = new System.Drawing.Point(442, 0);
+            this.lblLength.Location = new System.Drawing.Point(612, 0);
             this.lblLength.Name = "lblLength";
-            this.lblLength.Size = new System.Drawing.Size(149, 20);
+            this.lblLength.Size = new System.Drawing.Size(207, 20);
             this.lblLength.Text = "lblLength";
             this.lblLength.TextSize = new System.Drawing.Size(113, 16);
             // 
@@ -501,9 +511,9 @@
             this.lblWoreda.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
             this.lblWoreda.AppearanceItemCaption.Options.UseFont = true;
             this.lblWoreda.AppearanceItemCaption.Options.UseForeColor = true;
-            this.lblWoreda.Location = new System.Drawing.Point(148, 20);
+            this.lblWoreda.Location = new System.Drawing.Point(205, 20);
             this.lblWoreda.Name = "lblWoreda";
-            this.lblWoreda.Size = new System.Drawing.Size(148, 21);
+            this.lblWoreda.Size = new System.Drawing.Size(205, 21);
             this.lblWoreda.Text = "lblWoreda";
             this.lblWoreda.TextSize = new System.Drawing.Size(113, 16);
             // 
@@ -515,9 +525,9 @@
             this.lblZone.AppearanceItemCaption.Options.UseFont = true;
             this.lblZone.AppearanceItemCaption.Options.UseForeColor = true;
             this.lblZone.CustomizationFormText = "lblZone";
-            this.lblZone.Location = new System.Drawing.Point(148, 0);
+            this.lblZone.Location = new System.Drawing.Point(205, 0);
             this.lblZone.Name = "lblZone";
-            this.lblZone.Size = new System.Drawing.Size(148, 20);
+            this.lblZone.Size = new System.Drawing.Size(205, 20);
             this.lblZone.Text = "lblZone";
             this.lblZone.TextSize = new System.Drawing.Size(113, 16);
             // 
@@ -528,9 +538,9 @@
             this.lblRoadSurfaceType.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
             this.lblRoadSurfaceType.AppearanceItemCaption.Options.UseFont = true;
             this.lblRoadSurfaceType.AppearanceItemCaption.Options.UseForeColor = true;
-            this.lblRoadSurfaceType.Location = new System.Drawing.Point(442, 20);
+            this.lblRoadSurfaceType.Location = new System.Drawing.Point(612, 20);
             this.lblRoadSurfaceType.Name = "lblRoadSurfaceType";
-            this.lblRoadSurfaceType.Size = new System.Drawing.Size(149, 21);
+            this.lblRoadSurfaceType.Size = new System.Drawing.Size(207, 21);
             this.lblRoadSurfaceType.Text = "lblRoadSurfaceType";
             this.lblRoadSurfaceType.TextSize = new System.Drawing.Size(113, 16);
             // 
@@ -541,9 +551,9 @@
             this.lblRoadDensity.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
             this.lblRoadDensity.AppearanceItemCaption.Options.UseFont = true;
             this.lblRoadDensity.AppearanceItemCaption.Options.UseForeColor = true;
-            this.lblRoadDensity.Location = new System.Drawing.Point(738, 20);
+            this.lblRoadDensity.Location = new System.Drawing.Point(1022, 20);
             this.lblRoadDensity.Name = "lblRoadDensity";
-            this.lblRoadDensity.Size = new System.Drawing.Size(149, 21);
+            this.lblRoadDensity.Size = new System.Drawing.Size(207, 21);
             this.lblRoadDensity.Text = "lblRoadDensity";
             this.lblRoadDensity.TextSize = new System.Drawing.Size(113, 16);
             // 
@@ -554,23 +564,23 @@
             this.lblRoadClassification.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
             this.lblRoadClassification.AppearanceItemCaption.Options.UseFont = true;
             this.lblRoadClassification.AppearanceItemCaption.Options.UseForeColor = true;
-            this.lblRoadClassification.Location = new System.Drawing.Point(738, 0);
+            this.lblRoadClassification.Location = new System.Drawing.Point(1022, 0);
             this.lblRoadClassification.Name = "lblRoadClassification";
-            this.lblRoadClassification.Size = new System.Drawing.Size(149, 20);
+            this.lblRoadClassification.Size = new System.Drawing.Size(207, 20);
             this.lblRoadClassification.Text = "lblRoadClassification";
             this.lblRoadClassification.TextSize = new System.Drawing.Size(113, 16);
             // 
             // simpleSeparator2
             // 
             this.simpleSeparator2.AllowHotTrack = false;
-            this.simpleSeparator2.Location = new System.Drawing.Point(592, 0);
+            this.simpleSeparator2.Location = new System.Drawing.Point(820, 0);
             this.simpleSeparator2.Name = "simpleSeparator2";
             this.simpleSeparator2.Size = new System.Drawing.Size(1, 41);
             // 
             // simpleSeparator1
             // 
             this.simpleSeparator1.AllowHotTrack = false;
-            this.simpleSeparator1.Location = new System.Drawing.Point(591, 0);
+            this.simpleSeparator1.Location = new System.Drawing.Point(819, 0);
             this.simpleSeparator1.Name = "simpleSeparator1";
             this.simpleSeparator1.Size = new System.Drawing.Size(1, 41);
             // 
@@ -579,7 +589,7 @@
             this.simpleLabelItem1.AllowHotTrack = false;
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
-            this.simpleLabelItem1.Size = new System.Drawing.Size(148, 20);
+            this.simpleLabelItem1.Size = new System.Drawing.Size(205, 20);
             this.simpleLabelItem1.Text = "Zone";
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(113, 16);
             // 
@@ -588,43 +598,43 @@
             this.simpleLabelItem2.AllowHotTrack = false;
             this.simpleLabelItem2.Location = new System.Drawing.Point(0, 20);
             this.simpleLabelItem2.Name = "simpleLabelItem2";
-            this.simpleLabelItem2.Size = new System.Drawing.Size(148, 21);
+            this.simpleLabelItem2.Size = new System.Drawing.Size(205, 21);
             this.simpleLabelItem2.Text = "Woreda";
             this.simpleLabelItem2.TextSize = new System.Drawing.Size(113, 16);
             // 
             // simpleLabelItem3
             // 
             this.simpleLabelItem3.AllowHotTrack = false;
-            this.simpleLabelItem3.Location = new System.Drawing.Point(296, 0);
+            this.simpleLabelItem3.Location = new System.Drawing.Point(410, 0);
             this.simpleLabelItem3.Name = "simpleLabelItem3";
-            this.simpleLabelItem3.Size = new System.Drawing.Size(146, 20);
+            this.simpleLabelItem3.Size = new System.Drawing.Size(202, 20);
             this.simpleLabelItem3.Text = "Length";
             this.simpleLabelItem3.TextSize = new System.Drawing.Size(113, 16);
             // 
             // simpleLabelItem4
             // 
             this.simpleLabelItem4.AllowHotTrack = false;
-            this.simpleLabelItem4.Location = new System.Drawing.Point(296, 20);
+            this.simpleLabelItem4.Location = new System.Drawing.Point(410, 20);
             this.simpleLabelItem4.Name = "simpleLabelItem4";
-            this.simpleLabelItem4.Size = new System.Drawing.Size(146, 21);
+            this.simpleLabelItem4.Size = new System.Drawing.Size(202, 21);
             this.simpleLabelItem4.Text = "Surface Type";
             this.simpleLabelItem4.TextSize = new System.Drawing.Size(113, 16);
             // 
             // simpleLabelItem5
             // 
             this.simpleLabelItem5.AllowHotTrack = false;
-            this.simpleLabelItem5.Location = new System.Drawing.Point(593, 0);
+            this.simpleLabelItem5.Location = new System.Drawing.Point(821, 0);
             this.simpleLabelItem5.Name = "simpleLabelItem5";
-            this.simpleLabelItem5.Size = new System.Drawing.Size(145, 20);
+            this.simpleLabelItem5.Size = new System.Drawing.Size(201, 20);
             this.simpleLabelItem5.Text = "Classification";
             this.simpleLabelItem5.TextSize = new System.Drawing.Size(113, 16);
             // 
             // simpleLabelItem6
             // 
             this.simpleLabelItem6.AllowHotTrack = false;
-            this.simpleLabelItem6.Location = new System.Drawing.Point(593, 20);
+            this.simpleLabelItem6.Location = new System.Drawing.Point(821, 20);
             this.simpleLabelItem6.Name = "simpleLabelItem6";
-            this.simpleLabelItem6.Size = new System.Drawing.Size(145, 21);
+            this.simpleLabelItem6.Size = new System.Drawing.Size(201, 21);
             this.simpleLabelItem6.Text = "Road Density";
             this.simpleLabelItem6.TextSize = new System.Drawing.Size(113, 16);
             // 
@@ -639,7 +649,7 @@
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.editRoadSurfaceType,
             this.conditionEdit});
-            this.gridControl1.Size = new System.Drawing.Size(907, 369);
+            this.gridControl1.Size = new System.Drawing.Size(1249, 368);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -952,7 +962,7 @@
             this.colSectionChainageStartKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionChainageStartKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionChainageStartKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colSectionChainageStartKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];-;";
+            this.colSectionChainageStartKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];";
             this.colSectionChainageStartKM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSectionChainageStartKM.FieldName = "SectionChainageStartKM";
             this.colSectionChainageStartKM.MinWidth = 25;
@@ -967,7 +977,7 @@
             this.colSectionChainageEndKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionChainageEndKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionChainageEndKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colSectionChainageEndKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];-;";
+            this.colSectionChainageEndKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];";
             this.colSectionChainageEndKM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSectionChainageEndKM.FieldName = "SectionChainageEndKM";
             this.colSectionChainageEndKM.MinWidth = 25;
@@ -982,7 +992,7 @@
             this.colSectionLengthKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionLengthKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionLengthKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colSectionLengthKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];-;";
+            this.colSectionLengthKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];";
             this.colSectionLengthKM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSectionLengthKM.FieldName = "SectionLengthKM";
             this.colSectionLengthKM.MinWidth = 25;
@@ -1046,8 +1056,6 @@
             this.colBottleneck.FieldName = "Bottleneck";
             this.colBottleneck.MinWidth = 25;
             this.colBottleneck.Name = "colBottleneck";
-            this.colBottleneck.Visible = true;
-            this.colBottleneck.VisibleIndex = 11;
             this.colBottleneck.Width = 94;
             // 
             // colBottleneckSize
@@ -1059,8 +1067,6 @@
             this.colBottleneckSize.FieldName = "BottleneckSize";
             this.colBottleneckSize.MinWidth = 25;
             this.colBottleneckSize.Name = "colBottleneckSize";
-            this.colBottleneckSize.Visible = true;
-            this.colBottleneckSize.VisibleIndex = 12;
             this.colBottleneckSize.Width = 94;
             // 
             // colXBegin
@@ -1072,8 +1078,6 @@
             this.colXBegin.FieldName = "XBegin";
             this.colXBegin.MinWidth = 25;
             this.colXBegin.Name = "colXBegin";
-            this.colXBegin.Visible = true;
-            this.colXBegin.VisibleIndex = 13;
             this.colXBegin.Width = 94;
             // 
             // colYBegin
@@ -1085,8 +1089,6 @@
             this.colYBegin.FieldName = "YBegin";
             this.colYBegin.MinWidth = 25;
             this.colYBegin.Name = "colYBegin";
-            this.colYBegin.Visible = true;
-            this.colYBegin.VisibleIndex = 14;
             this.colYBegin.Width = 94;
             // 
             // colXEnd
@@ -1098,8 +1100,6 @@
             this.colXEnd.FieldName = "XEnd";
             this.colXEnd.MinWidth = 25;
             this.colXEnd.Name = "colXEnd";
-            this.colXEnd.Visible = true;
-            this.colXEnd.VisibleIndex = 15;
             this.colXEnd.Width = 94;
             // 
             // colYEnd
@@ -1111,8 +1111,6 @@
             this.colYEnd.FieldName = "YEnd";
             this.colYEnd.MinWidth = 25;
             this.colYEnd.Name = "colYEnd";
-            this.colYEnd.Visible = true;
-            this.colYEnd.VisibleIndex = 16;
             this.colYEnd.Width = 94;
             // 
             // colStartNodeID
@@ -1124,8 +1122,6 @@
             this.colStartNodeID.FieldName = "StartNodeID";
             this.colStartNodeID.MinWidth = 25;
             this.colStartNodeID.Name = "colStartNodeID";
-            this.colStartNodeID.Visible = true;
-            this.colStartNodeID.VisibleIndex = 17;
             this.colStartNodeID.Width = 94;
             // 
             // colEndNodeID
@@ -1137,8 +1133,6 @@
             this.colEndNodeID.FieldName = "EndNodeID";
             this.colEndNodeID.MinWidth = 25;
             this.colEndNodeID.Name = "colEndNodeID";
-            this.colEndNodeID.Visible = true;
-            this.colEndNodeID.VisibleIndex = 18;
             this.colEndNodeID.Width = 94;
             // 
             // colDateOfAssessment
@@ -1151,7 +1145,7 @@
             this.colDateOfAssessment.MinWidth = 25;
             this.colDateOfAssessment.Name = "colDateOfAssessment";
             this.colDateOfAssessment.Visible = true;
-            this.colDateOfAssessment.VisibleIndex = 19;
+            this.colDateOfAssessment.VisibleIndex = 11;
             this.colDateOfAssessment.Width = 94;
             // 
             // colAssessedBy
@@ -1164,7 +1158,7 @@
             this.colAssessedBy.MinWidth = 25;
             this.colAssessedBy.Name = "colAssessedBy";
             this.colAssessedBy.Visible = true;
-            this.colAssessedBy.VisibleIndex = 20;
+            this.colAssessedBy.VisibleIndex = 12;
             this.colAssessedBy.Width = 94;
             // 
             // colComments
@@ -1177,7 +1171,7 @@
             this.colComments.MinWidth = 25;
             this.colComments.Name = "colComments";
             this.colComments.Visible = true;
-            this.colComments.VisibleIndex = 21;
+            this.colComments.VisibleIndex = 13;
             this.colComments.Width = 94;
             // 
             // Root
@@ -1187,7 +1181,7 @@
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(931, 517);
+            this.Root.Size = new System.Drawing.Size(1273, 516);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -1195,7 +1189,7 @@
             this.layoutControlItem1.Control = this.splitContainerControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(911, 497);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1253, 496);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -1231,7 +1225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 737);
+            this.ClientSize = new System.Drawing.Size(1273, 737);
             this.Controls.Add(this.cboYear);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.labelControl3);
@@ -1249,6 +1243,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.unpavedRoadConditionSurveyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
+            this.splitContainerControl1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();
+            this.splitContainerControl1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();

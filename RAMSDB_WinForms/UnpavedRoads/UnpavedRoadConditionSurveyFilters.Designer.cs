@@ -124,6 +124,9 @@
             this.roadsPerUserBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).BeginInit();
+            this.splitContainerControl1.Panel2.SuspendLayout();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unpavedRoadConditionSurveyBindingSource)).BeginInit();
@@ -135,7 +138,7 @@
             // 
             // colSurfaceCondition
             // 
-            this.colSurfaceCondition.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colSurfaceCondition.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colSurfaceCondition.AppearanceHeader.Options.UseFont = true;
             this.colSurfaceCondition.AppearanceHeader.Options.UseTextOptions = true;
             this.colSurfaceCondition.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -150,7 +153,7 @@
             // 
             this.colCondition_SurfaceCondition.AppearanceCell.Options.UseTextOptions = true;
             this.colCondition_SurfaceCondition.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colCondition_SurfaceCondition.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colCondition_SurfaceCondition.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colCondition_SurfaceCondition.AppearanceHeader.Options.UseFont = true;
             this.colCondition_SurfaceCondition.AppearanceHeader.Options.UseTextOptions = true;
             this.colCondition_SurfaceCondition.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -165,7 +168,7 @@
             // 
             // colCondition_DrainageConditionLeft
             // 
-            this.colCondition_DrainageConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colCondition_DrainageConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colCondition_DrainageConditionLeft.AppearanceHeader.Options.UseFont = true;
             this.colCondition_DrainageConditionLeft.AppearanceHeader.Options.UseTextOptions = true;
             this.colCondition_DrainageConditionLeft.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -179,7 +182,7 @@
             // 
             this.colDrainageConditionLeft.AppearanceCell.Options.UseTextOptions = true;
             this.colDrainageConditionLeft.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colDrainageConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colDrainageConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colDrainageConditionLeft.AppearanceHeader.Options.UseFont = true;
             this.colDrainageConditionLeft.AppearanceHeader.Options.UseTextOptions = true;
             this.colDrainageConditionLeft.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -194,7 +197,7 @@
             // 
             // colCondition_ShoulderConditionRight
             // 
-            this.colCondition_ShoulderConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colCondition_ShoulderConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colCondition_ShoulderConditionRight.AppearanceHeader.Options.UseFont = true;
             this.colCondition_ShoulderConditionRight.AppearanceHeader.Options.UseTextOptions = true;
             this.colCondition_ShoulderConditionRight.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -208,7 +211,7 @@
             // 
             this.colShoulderConditionRight.AppearanceCell.Options.UseTextOptions = true;
             this.colShoulderConditionRight.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colShoulderConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colShoulderConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colShoulderConditionRight.AppearanceHeader.Options.UseFont = true;
             this.colShoulderConditionRight.AppearanceHeader.Options.UseTextOptions = true;
             this.colShoulderConditionRight.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -223,7 +226,7 @@
             // 
             // colCondition_ShoulderConditionLeft
             // 
-            this.colCondition_ShoulderConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colCondition_ShoulderConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colCondition_ShoulderConditionLeft.AppearanceHeader.Options.UseFont = true;
             this.colCondition_ShoulderConditionLeft.AppearanceHeader.Options.UseTextOptions = true;
             this.colCondition_ShoulderConditionLeft.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -237,7 +240,7 @@
             // 
             this.colShoulderConditionLeft.AppearanceCell.Options.UseTextOptions = true;
             this.colShoulderConditionLeft.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colShoulderConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colShoulderConditionLeft.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colShoulderConditionLeft.AppearanceHeader.Options.UseFont = true;
             this.colShoulderConditionLeft.AppearanceHeader.Options.UseTextOptions = true;
             this.colShoulderConditionLeft.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -252,7 +255,7 @@
             // 
             // colCondition_DrainageConditionRight
             // 
-            this.colCondition_DrainageConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colCondition_DrainageConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colCondition_DrainageConditionRight.AppearanceHeader.Options.UseFont = true;
             this.colCondition_DrainageConditionRight.AppearanceHeader.Options.UseTextOptions = true;
             this.colCondition_DrainageConditionRight.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -266,7 +269,7 @@
             // 
             this.colDrainageConditionRight.AppearanceCell.Options.UseTextOptions = true;
             this.colDrainageConditionRight.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colDrainageConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colDrainageConditionRight.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colDrainageConditionRight.AppearanceHeader.Options.UseFont = true;
             this.colDrainageConditionRight.AppearanceHeader.Options.UseTextOptions = true;
             this.colDrainageConditionRight.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -386,7 +389,13 @@
             this.splitContainerControl1.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.None;
             this.splitContainerControl1.Location = new System.Drawing.Point(0, 148);
             this.splitContainerControl1.Name = "splitContainerControl1";
+            // 
+            // splitContainerControl1.Panel1
+            // 
             this.splitContainerControl1.Panel1.Text = "Panel1";
+            // 
+            // splitContainerControl1.Panel2
+            // 
             this.splitContainerControl1.Panel2.Controls.Add(this.cboYear);
             this.splitContainerControl1.Panel2.Controls.Add(this.labelControl3);
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
@@ -705,7 +714,7 @@
             // 
             // colRCSYear
             // 
-            this.colRCSYear.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colRCSYear.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colRCSYear.AppearanceHeader.Options.UseFont = true;
             this.colRCSYear.AppearanceHeader.Options.UseTextOptions = true;
             this.colRCSYear.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -773,13 +782,11 @@
             this.colWoreda.MinWidth = 25;
             this.colWoreda.Name = "colWoreda";
             this.colWoreda.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
-            this.colWoreda.Visible = true;
-            this.colWoreda.VisibleIndex = 2;
             this.colWoreda.Width = 171;
             // 
             // colRoadID
             // 
-            this.colRoadID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colRoadID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colRoadID.AppearanceHeader.Options.UseFont = true;
             this.colRoadID.AppearanceHeader.Options.UseTextOptions = true;
             this.colRoadID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -790,7 +797,7 @@
             this.colRoadID.Name = "colRoadID";
             this.colRoadID.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
             this.colRoadID.Visible = true;
-            this.colRoadID.VisibleIndex = 3;
+            this.colRoadID.VisibleIndex = 2;
             this.colRoadID.Width = 249;
             // 
             // colRoadClass
@@ -805,11 +812,11 @@
             this.colRoadClass.Name = "colRoadClass";
             this.colRoadClass.Visible = true;
             this.colRoadClass.VisibleIndex = 4;
-            this.colRoadClass.Width = 203;
+            this.colRoadClass.Width = 112;
             // 
             // colRCSID
             // 
-            this.colRCSID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colRCSID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colRCSID.AppearanceHeader.Options.UseFont = true;
             this.colRCSID.AppearanceHeader.Options.UseTextOptions = true;
             this.colRCSID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -821,7 +828,7 @@
             // 
             // colRoadSectionNo
             // 
-            this.colRoadSectionNo.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colRoadSectionNo.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colRoadSectionNo.AppearanceHeader.Options.UseFont = true;
             this.colRoadSectionNo.AppearanceHeader.Options.UseTextOptions = true;
             this.colRoadSectionNo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -833,7 +840,7 @@
             // 
             // colSectionChainageStartKM
             // 
-            this.colSectionChainageStartKM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colSectionChainageStartKM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colSectionChainageStartKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionChainageStartKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionChainageStartKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -850,7 +857,7 @@
             // 
             // colSectionChainageEndKM
             // 
-            this.colSectionChainageEndKM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colSectionChainageEndKM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colSectionChainageEndKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionChainageEndKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionChainageEndKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -867,7 +874,7 @@
             // 
             // colSectionLengthKM
             // 
-            this.colSectionLengthKM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colSectionLengthKM.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colSectionLengthKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionLengthKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionLengthKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -884,7 +891,7 @@
             // 
             // colSurfaceType
             // 
-            this.colSurfaceType.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colSurfaceType.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colSurfaceType.AppearanceHeader.Options.UseFont = true;
             this.colSurfaceType.AppearanceHeader.Options.UseTextOptions = true;
             this.colSurfaceType.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -894,12 +901,12 @@
             this.colSurfaceType.MinWidth = 25;
             this.colSurfaceType.Name = "colSurfaceType";
             this.colSurfaceType.Visible = true;
-            this.colSurfaceType.VisibleIndex = 2;
-            this.colSurfaceType.Width = 123;
+            this.colSurfaceType.VisibleIndex = 3;
+            this.colSurfaceType.Width = 113;
             // 
             // colXBegin
             // 
-            this.colXBegin.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colXBegin.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colXBegin.AppearanceHeader.Options.UseFont = true;
             this.colXBegin.AppearanceHeader.Options.UseTextOptions = true;
             this.colXBegin.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -911,7 +918,7 @@
             // 
             // colYBegin
             // 
-            this.colYBegin.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colYBegin.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colYBegin.AppearanceHeader.Options.UseFont = true;
             this.colYBegin.AppearanceHeader.Options.UseTextOptions = true;
             this.colYBegin.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -923,7 +930,7 @@
             // 
             // colXEnd
             // 
-            this.colXEnd.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colXEnd.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colXEnd.AppearanceHeader.Options.UseFont = true;
             this.colXEnd.AppearanceHeader.Options.UseTextOptions = true;
             this.colXEnd.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -935,7 +942,7 @@
             // 
             // colYEnd
             // 
-            this.colYEnd.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colYEnd.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colYEnd.AppearanceHeader.Options.UseFont = true;
             this.colYEnd.AppearanceHeader.Options.UseTextOptions = true;
             this.colYEnd.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -947,7 +954,7 @@
             // 
             // colStartNodeID
             // 
-            this.colStartNodeID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colStartNodeID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colStartNodeID.AppearanceHeader.Options.UseFont = true;
             this.colStartNodeID.AppearanceHeader.Options.UseTextOptions = true;
             this.colStartNodeID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -959,7 +966,7 @@
             // 
             // colEndNodeID
             // 
-            this.colEndNodeID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colEndNodeID.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colEndNodeID.AppearanceHeader.Options.UseFont = true;
             this.colEndNodeID.AppearanceHeader.Options.UseTextOptions = true;
             this.colEndNodeID.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -984,7 +991,7 @@
             // 
             // colBottleneck
             // 
-            this.colBottleneck.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colBottleneck.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colBottleneck.AppearanceHeader.Options.UseFont = true;
             this.colBottleneck.AppearanceHeader.Options.UseTextOptions = true;
             this.colBottleneck.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -993,13 +1000,11 @@
             this.colBottleneck.FieldName = "Bottleneck";
             this.colBottleneck.MinWidth = 25;
             this.colBottleneck.Name = "colBottleneck";
-            this.colBottleneck.Visible = true;
-            this.colBottleneck.VisibleIndex = 14;
             this.colBottleneck.Width = 70;
             // 
             // colBottleneckSize
             // 
-            this.colBottleneckSize.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colBottleneckSize.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colBottleneckSize.AppearanceHeader.Options.UseFont = true;
             this.colBottleneckSize.AppearanceHeader.Options.UseTextOptions = true;
             this.colBottleneckSize.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -1010,13 +1015,11 @@
             this.colBottleneckSize.FieldName = "BottleneckSize";
             this.colBottleneckSize.MinWidth = 25;
             this.colBottleneckSize.Name = "colBottleneckSize";
-            this.colBottleneckSize.Visible = true;
-            this.colBottleneckSize.VisibleIndex = 15;
             this.colBottleneckSize.Width = 100;
             // 
             // colDateOfAssessment
             // 
-            this.colDateOfAssessment.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colDateOfAssessment.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colDateOfAssessment.AppearanceHeader.Options.UseFont = true;
             this.colDateOfAssessment.AppearanceHeader.Options.UseTextOptions = true;
             this.colDateOfAssessment.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -1028,7 +1031,7 @@
             // 
             // colAssessedBy
             // 
-            this.colAssessedBy.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colAssessedBy.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colAssessedBy.AppearanceHeader.Options.UseFont = true;
             this.colAssessedBy.AppearanceHeader.Options.UseTextOptions = true;
             this.colAssessedBy.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -1040,7 +1043,7 @@
             // 
             // colComments
             // 
-            this.colComments.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colComments.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colComments.AppearanceHeader.Options.UseFont = true;
             this.colComments.AppearanceHeader.Options.UseTextOptions = true;
             this.colComments.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -1052,7 +1055,7 @@
             // 
             // colRoadSurfaceType
             // 
-            this.colRoadSurfaceType.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colRoadSurfaceType.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colRoadSurfaceType.AppearanceHeader.Options.UseFont = true;
             this.colRoadSurfaceType.AppearanceHeader.Options.UseTextOptions = true;
             this.colRoadSurfaceType.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -1064,7 +1067,7 @@
             // 
             // colRoadsGISData
             // 
-            this.colRoadsGISData.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colRoadsGISData.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.colRoadsGISData.AppearanceHeader.Options.UseFont = true;
             this.colRoadsGISData.AppearanceHeader.Options.UseTextOptions = true;
             this.colRoadsGISData.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -1098,6 +1101,9 @@
             this.Name = "UnpavedRoadConditionSurveyFilters";
             this.Size = new System.Drawing.Size(933, 738);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();
+            this.splitContainerControl1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

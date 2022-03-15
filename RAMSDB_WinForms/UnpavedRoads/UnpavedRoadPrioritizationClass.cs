@@ -189,8 +189,32 @@ namespace RAMSDB.Data
 
                                     RoadLengthWoredaTotal = (decimal)t._woredaRoadLength,
                                     WoredaPopulation = (decimal)p._population,
+                                    
+                                    PopulationServed = (decimal)r.RoadsGISData.PopulationServed
+                                }).AsQueryable();
+
+
+            /*
+             * populationServed = (from r in roadsPerUser
+                                join p in populationByWoreda on r.AdminID equals p._adminID
+                                join t in totalLengthofRoadsByWoreda on r.AdminID equals t._adminID
+                                orderby r.AdminBoundary.ZoneName, r.AdminBoundary.WoredaName, r.RoadsGISData.RoadOriginDestination
+                                select new PopulationServedPerRoad
+                                {
+                                    RoadID = r.RoadID,
+                                    AdminID = r.AdminID,
+                                    Zone = r.AdminBoundary.ZoneName,
+                                    Woreda = r.AdminBoundary.WoredaName,
+                                    OriginDestination = r.RoadsGISData.RoadOriginDestination,
+                                    RoadLength = (decimal)r.RoadsGISData.RoadLengthInKm,
+
+
+                                    RoadLengthWoredaTotal = (decimal)t._woredaRoadLength,
+                                    WoredaPopulation = (decimal)p._population,
                                     PopulationServed = p._population.GetValueOrDefault() * ((r.RoadsGISData.RoadLengthInKm.GetValueOrDefault()) / t._woredaRoadLength.GetValueOrDefault())
                                 }).AsQueryable();
+            */
+
             return populationServed;
 
         }
@@ -796,7 +820,7 @@ namespace RAMSDB.Data
                                     BenefitFactor = ms == null ? 0 : ms.BenefitFactor,// mc.BenefitFactor,
                                     TotalCost = c.TotalCost,
                                     OverallScore = c.TotalCost == 0 ? 0 :
-                                    ((ps == null ? 0 : ps.PopulationServed) * (ms == null ? 0 : ms.BenefitFactor)) / c.TotalCost
+                                    ((ps == null ? 0 : ps.PopulationServed) * (ms == null ? 0 : ms.BenefitFactor)) / (c.TotalCost*100)
                                     //OverallScore = c.TotalCost == 0 ? 0 : ((rs.PopulationServed) * (ls.BenefitFactor)) / c.TotalCost
                                 }).AsQueryable();
 

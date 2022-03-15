@@ -939,6 +939,7 @@
           <Property Name="ShapeID" Type="int" />
           <Property Name="MaintenanceBranchID" Type="uniqueidentifier" />
           <Property Name="RoadOriginDestination" Type="nvarchar" Nullable="false" MaxLength="511" StoreGeneratedPattern="Computed" />
+          <Property Name="PopulationServed" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="RoadsPerUser">
           <Key>
@@ -3282,6 +3283,7 @@
           <Property Name="ShapeID" Type="Int32" ed:ValidateRequired="false" ed:Guid="57fd16a3-386c-4b1c-8d11-40238c06ac42" />
           <Property Name="MaintenanceBranchID" Type="Guid" ed:ValidateRequired="false" ed:Guid="388e585c-10ac-4250-bc8a-50b81c2a6736" />
           <Property Name="RoadOriginDestination" Type="String" Nullable="false" MaxLength="511" Unicode="true" annotation:StoreGeneratedPattern="Computed" ed:ValidateMaxLength="511" ed:ValidateRequired="true" ed:Guid="4ceecb2a-cd34-4782-a306-d56fa92a74ca" />
+          <Property Name="PopulationServed" Type="Decimal" Precision="18" Scale="2" ed:ValidateRequired="false" ed:Guid="7427be43-eb20-4480-bd6e-5ffbb54c1c0a" />
           <NavigationProperty Name="AnnualRoadWorkPlans" Relationship="RAMSDBModel.FK_AnnualRoadWorkPlan_RoadsGISData_RoadID" FromRole="RoadsGISData" ToRole="AnnualRoadWorkPlans" ed:Guid="05aaeea0-645c-481a-a9ac-4cf1abdb42d1" />
           <NavigationProperty Name="MultiCriteriaAnalysisDatas" Relationship="RAMSDBModel.FK_MultiCriteriaAnalysisData_RoadsGISData_RoadID" FromRole="RoadsGISData" ToRole="MultiCriteriaAnalysisDatas" ed:Guid="0b50f334-e7f1-4dd5-a874-49319a2d1340" />
           <NavigationProperty Name="PavedRoadConditionSurveys" Relationship="RAMSDBModel.FK_PavedRoadConditionSurvey_RoadsGISData_RoadID" FromRole="RoadsGISData" ToRole="PavedRoadConditionSurveys" ed:Guid="7fbf42d1-827b-4e97-b94f-7e7bf97ddee7" />
@@ -5227,6 +5229,7 @@
                 <ScalarProperty Name="ShapeID" ColumnName="ShapeID" />
                 <ScalarProperty Name="MaintenanceBranchID" ColumnName="MaintenanceBranchID" />
                 <ScalarProperty Name="RoadOriginDestination" ColumnName="RoadOriginDestination" />
+                <ScalarProperty Name="PopulationServed" ColumnName="PopulationServed" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
