@@ -34,6 +34,7 @@
             this.ColYear = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colOrDes = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTotalCost = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMaintenanceBranch = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colZone = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colWoreda = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLength = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -56,6 +57,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).BeginInit();
+            this.gridSplitContainer1.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).BeginInit();
             this.gridSplitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,6 +84,7 @@
             this.ColYear,
             this.colOrDes,
             this.colTotalCost,
+            this.colMaintenanceBranch,
             this.colZone,
             this.colWoreda,
             this.colLength,
@@ -88,9 +93,12 @@
             this.colRoadID});
             this.gridView.DetailHeight = 431;
             this.gridView.GridControl = this.gridControl;
+            this.gridView.GroupCount = 1;
             this.gridView.Name = "gridView";
             this.gridView.OptionsBehavior.AutoExpandAllGroups = true;
             this.gridView.OptionsBehavior.Editable = false;
+            this.gridView.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colMaintenanceBranch, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.gridView.DoubleClick += new System.EventHandler(this.GridView_DoubleClick);
             // 
             // ColYear
@@ -116,7 +124,7 @@
             this.colOrDes.Name = "colOrDes";
             this.colOrDes.Visible = true;
             this.colOrDes.VisibleIndex = 0;
-            this.colOrDes.Width = 120;
+            this.colOrDes.Width = 134;
             // 
             // colTotalCost
             // 
@@ -132,7 +140,21 @@
             this.colTotalCost.Name = "colTotalCost";
             this.colTotalCost.Visible = true;
             this.colTotalCost.VisibleIndex = 1;
-            this.colTotalCost.Width = 117;
+            this.colTotalCost.Width = 131;
+            // 
+            // colMaintenanceBranch
+            // 
+            this.colMaintenanceBranch.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.colMaintenanceBranch.AppearanceHeader.Options.UseFont = true;
+            this.colMaintenanceBranch.AppearanceHeader.Options.UseTextOptions = true;
+            this.colMaintenanceBranch.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colMaintenanceBranch.Caption = "Maintenance Branch";
+            this.colMaintenanceBranch.FieldName = "MaintenanceBranch";
+            this.colMaintenanceBranch.MinWidth = 25;
+            this.colMaintenanceBranch.Name = "colMaintenanceBranch";
+            this.colMaintenanceBranch.Visible = true;
+            this.colMaintenanceBranch.VisibleIndex = 2;
+            this.colMaintenanceBranch.Width = 161;
             // 
             // colZone
             // 
@@ -144,8 +166,6 @@
             this.colZone.FieldName = "Zone";
             this.colZone.MinWidth = 25;
             this.colZone.Name = "colZone";
-            this.colZone.Visible = true;
-            this.colZone.VisibleIndex = 2;
             this.colZone.Width = 117;
             // 
             // colWoreda
@@ -159,7 +179,7 @@
             this.colWoreda.MinWidth = 25;
             this.colWoreda.Name = "colWoreda";
             this.colWoreda.Visible = true;
-            this.colWoreda.VisibleIndex = 3;
+            this.colWoreda.VisibleIndex = 2;
             this.colWoreda.Width = 117;
             // 
             // colLength
@@ -175,7 +195,7 @@
             this.colLength.MinWidth = 25;
             this.colLength.Name = "colLength";
             this.colLength.Visible = true;
-            this.colLength.VisibleIndex = 4;
+            this.colLength.VisibleIndex = 3;
             this.colLength.Width = 117;
             // 
             // colClass
@@ -189,7 +209,7 @@
             this.colClass.MinWidth = 25;
             this.colClass.Name = "colClass";
             this.colClass.Visible = true;
-            this.colClass.VisibleIndex = 5;
+            this.colClass.VisibleIndex = 4;
             this.colClass.Width = 117;
             // 
             // colSurfaceType
@@ -203,8 +223,8 @@
             this.colSurfaceType.MinWidth = 25;
             this.colSurfaceType.Name = "colSurfaceType";
             this.colSurfaceType.Visible = true;
-            this.colSurfaceType.VisibleIndex = 6;
-            this.colSurfaceType.Width = 125;
+            this.colSurfaceType.VisibleIndex = 5;
+            this.colSurfaceType.Width = 128;
             // 
             // colRoadID
             // 
@@ -336,6 +356,9 @@
             this.gridSplitContainer1.Grid = this.gridControl;
             this.gridSplitContainer1.Location = new System.Drawing.Point(0, 148);
             this.gridSplitContainer1.Name = "gridSplitContainer1";
+            // 
+            // gridSplitContainer1.Panel1
+            // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.cboYear);
             this.gridSplitContainer1.Panel1.Controls.Add(this.labelControl3);
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl);
@@ -355,6 +378,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).EndInit();
+            this.gridSplitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
             this.gridSplitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -387,5 +413,6 @@
         private System.Windows.Forms.ComboBox cboYear;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaintenanceBranch;
     }
 }

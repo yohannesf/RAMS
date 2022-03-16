@@ -23,7 +23,7 @@ namespace RAMSDB_WinForms.Administration
         public string myDocPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
 
-        string userWoreda;
+        string userMaintenanceBranch;
 
         public Guid userID = RAMSDBDataLoader.LoginInfo.GetLoggedInUser.UserID;
 
@@ -37,8 +37,12 @@ namespace RAMSDB_WinForms.Administration
             cboYear.Items.AddRange(years);
 
             cboYear.SelectedIndex = cboYear.FindStringExact(_year.ToString());
-            userWoreda = dbContext.RoadsPerUser.Where(c => c.UserID == RAMSDBDataLoader.LoginInfo.GetLoggedInUser.UserID).
-                Select(c => c.AdminBoundary.WoredaName).FirstOrDefault().ToString();
+
+
+            /// Check why this is important!
+            userMaintenanceBranch = dbContext.RoadsPerUser.Where(c => c.UserID == RAMSDBDataLoader.LoginInfo.GetLoggedInUser.UserID).
+                Select(c => c.RoadsGISData.MaintenanceBranch).FirstOrDefault() ==null ? "Maintenance Branch": dbContext.RoadsPerUser.Where(c => c.UserID == RAMSDBDataLoader.LoginInfo.GetLoggedInUser.UserID).
+                Select(c => c.RoadsGISData.MaintenanceBranch).FirstOrDefault().ToString();
 
 
         }
@@ -202,7 +206,7 @@ namespace RAMSDB_WinForms.Administration
             trafficSurvey.TableName = "TrafficSurvey";
 
 
-            string archiveName = userWoreda + "_" +
+            string archiveName = userMaintenanceBranch + "_" +
                yearFilter + "DataExportedOn_" +
                DateTime.Now.Year.ToString() +
                DateTime.Now.Month.ToString() +

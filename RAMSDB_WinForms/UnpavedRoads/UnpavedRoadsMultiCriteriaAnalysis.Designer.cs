@@ -36,6 +36,7 @@
             this.colYear = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRoadID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colZoe = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Woreda = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRoadOriginDestination = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBenefitFactor = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -72,19 +73,22 @@
             this.mainRibbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.bbiExport = new DevExpress.XtraBars.BarButtonItem();
             this.mainRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.mainRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.cboYear = new System.Windows.Forms.ComboBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::RAMSDB_WinForms.WaitForm1), true, true, typeof(System.Windows.Forms.UserControl));
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiExport = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).BeginInit();
+            this.gridSplitContainer1.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).BeginInit();
             this.gridSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -110,6 +114,9 @@
             this.gridSplitContainer1.Grid = this.gridControl1;
             this.gridSplitContainer1.Location = new System.Drawing.Point(12, 12);
             this.gridSplitContainer1.Name = "gridSplitContainer1";
+            // 
+            // gridSplitContainer1.Panel1
+            // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.cboYear);
             this.gridSplitContainer1.Panel1.Controls.Add(this.labelControl3);
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
@@ -140,6 +147,7 @@
             this.colYear,
             this.colRoadID,
             this.colZoe,
+            this.gridColumn1,
             this.Woreda,
             this.colRoadOriginDestination,
             this.colBenefitFactor,
@@ -215,9 +223,21 @@
             this.colZoe.FieldName = "Zone";
             this.colZoe.MinWidth = 25;
             this.colZoe.Name = "colZoe";
-            this.colZoe.Visible = true;
-            this.colZoe.VisibleIndex = 0;
             this.colZoe.Width = 94;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.gridColumn1.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.Caption = "Maintenance Branch";
+            this.gridColumn1.FieldName = "MaintenanceBranch";
+            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 94;
             // 
             // Woreda
             // 
@@ -760,6 +780,14 @@
             this.barStaticItem1.Id = 10;
             this.barStaticItem1.Name = "barStaticItem1";
             // 
+            // bbiExport
+            // 
+            this.bbiExport.Caption = "Print Preview";
+            this.bbiExport.Id = 11;
+            this.bbiExport.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bbiExport.ImageOptions.SvgImage")));
+            this.bbiExport.Name = "bbiExport";
+            this.bbiExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiExport_ItemClick);
+            // 
             // mainRibbonPage
             // 
             this.mainRibbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -776,6 +804,14 @@
             this.mainRibbonPageGroup.ItemLinks.Add(this.bbiRefresh);
             this.mainRibbonPageGroup.Name = "mainRibbonPageGroup";
             this.mainRibbonPageGroup.Text = "Tasks";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup1.ImageOptions.SvgImage")));
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiExport);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Print and Export";
             // 
             // cboYear
             // 
@@ -830,22 +866,6 @@
             // 
             this.splashScreenManager1.ClosingDelay = 500;
             // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroup1.ImageOptions.SvgImage")));
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiExport);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Print and Export";
-            // 
-            // bbiExport
-            // 
-            this.bbiExport.Caption = "Print Preview";
-            this.bbiExport.Id = 11;
-            this.bbiExport.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.bbiExport.Name = "bbiExport";
-            this.bbiExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiExport_ItemClick);
-            // 
             // UnpavedRoadsMultiCriteriaAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -858,6 +878,9 @@
             this.Size = new System.Drawing.Size(933, 738);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).EndInit();
+            this.gridSplitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
             this.gridSplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -925,5 +948,6 @@
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
         private DevExpress.XtraBars.BarButtonItem bbiExport;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
     }
 }

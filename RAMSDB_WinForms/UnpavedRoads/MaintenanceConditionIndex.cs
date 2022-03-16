@@ -51,6 +51,7 @@ namespace RAMSDB_WinForms.UnpavedRoads
                                  u.RoadsPerUser.AdminBoundary.ZoneName,
                                  u.RoadsPerUser.AdminBoundary.WoredaName,
                                  u.RoadsGISData.RoadOriginDestination,
+                                 u.RoadsGISData.MaintenanceBranch.MaintenanceBranch1,
                                  u.SectionLengthKM,
                                  SurfaceConditionFactor = u.SurfaceCondition,
 
@@ -85,6 +86,7 @@ namespace RAMSDB_WinForms.UnpavedRoads
                                    u.ZoneName,
                                    u.WoredaName,
                                    u.RoadOriginDestination,
+                                   u.MaintenanceBranch1,
                                    u.SectionLengthKM,
                                    u.SurfaceConditionFactor,
                                    u.ShoulderConditionFactor,

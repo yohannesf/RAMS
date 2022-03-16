@@ -915,6 +915,8 @@
             this.colUser.FieldName = "colUser";
             this.colUser.MinWidth = 25;
             this.colUser.Name = "colUser";
+            this.colUser.OptionsFilter.AllowAutoFilter = false;
+            this.colUser.OptionsFilter.AllowFilter = false;
             this.colUser.UnboundType = DevExpress.Data.UnboundColumnType.Integer;
             this.colUser.Visible = true;
             this.colUser.VisibleIndex = 6;

@@ -309,13 +309,14 @@ namespace RAMSDB_WinForms.Administration
             }
             else if (LoggedInUser.roleName == "Woreda Data Person")
             {
-                accItemRWUnitCost.Visible = true;
+                accItemRWUnitCost.Visible = false;
                 accItemImport.Visible = false;
                 accItemExport.Visible = true;
                 accItemManageUsers.Visible = false;
                 accItemAssignUsers.Visible = false;
+                accItemManageRoads.Visible = false;
                 accItemExportInitializationData.Visible = false;
-                accordionControl.SelectedElement = accItemManageRoads;// accItemExport;
+                accordionControl.SelectedElement = accItemExport;// accItemExport;
             }
 
             //  accordionControl.SelectedElement = accItemRWUnitCost;// accItemExport;// accItemRoadsAssigned;

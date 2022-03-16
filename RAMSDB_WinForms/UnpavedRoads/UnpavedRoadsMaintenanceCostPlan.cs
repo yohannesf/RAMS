@@ -97,6 +97,7 @@ namespace RAMSDB_WinForms
                                t.TotalCost,
                                Zone = p.AdminBoundary.ZoneName,
                                Woreda = p.AdminBoundary.WoredaName,
+                               MaintenanceBranch = p.RoadsGISData.MaintenanceBranch.MaintenanceBranch1,
                                OriginDestination = g.RoadOriginDestination,
                                RoadLength = g.RoadLengthInKm,
                                Classification = g.RoadClassification.RoadClassificationDescription,

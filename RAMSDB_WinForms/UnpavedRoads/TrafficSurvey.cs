@@ -74,8 +74,8 @@ namespace RAMSDB_WinForms.UnpavedRoads
 
 
 
-            lblZone.Text = rpu.Where(t => t.RoadID == roadID).Select(c => c.AdminBoundary.ZoneName).FirstOrDefault();// multiCriteriaData.Select(c => c.ro.RoadsPerUser.AdminBoundary.ZoneName).FirstOrDefault().ToString();
-
+            // lblZone.Text = rpu.Where(t => t.RoadID == roadID).Select(c => c.AdminBoundary.ZoneName).FirstOrDefault();// multiCriteriaData.Select(c => c.ro.RoadsPerUser.AdminBoundary.ZoneName).FirstOrDefault().ToString();
+            lblZone.Text = rpu.Where(t => t.RoadID == roadID).Select(c => c.RoadsGISData.MaintenanceBranch.MaintenanceBranch1).FirstOrDefault();
             lblWoreda.Text = rpu.Where(t => t.RoadID == roadID).Select(c => c.AdminBoundary.WoredaName).FirstOrDefault(); //multiCriteriaData.Select(c => c.RoadsPerUser.AdminBoundary.WoredaName).FirstOrDefault().ToString();
 
             //lblRoadOriginDestination.Text = trafficSurveys.Select(c => c.RoadsGISData.RoadOriginDestination).FirstOrDefault().ToString();

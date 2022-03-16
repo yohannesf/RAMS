@@ -101,13 +101,13 @@
             this.colZone.AppearanceHeader.Options.UseFont = true;
             this.colZone.AppearanceHeader.Options.UseTextOptions = true;
             this.colZone.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colZone.Caption = "Zone";
-            this.colZone.FieldName = "Zone";
+            this.colZone.Caption = "Maintenance Branch";
+            this.colZone.FieldName = "MaintenanceBranch";
             this.colZone.MinWidth = 25;
             this.colZone.Name = "colZone";
             this.colZone.Visible = true;
             this.colZone.VisibleIndex = 0;
-            this.colZone.Width = 109;
+            this.colZone.Width = 152;
             // 
             // colWoreda
             // 
@@ -121,7 +121,7 @@
             this.colWoreda.Name = "colWoreda";
             this.colWoreda.Visible = true;
             this.colWoreda.VisibleIndex = 1;
-            this.colWoreda.Width = 109;
+            this.colWoreda.Width = 125;
             // 
             // colRoadName
             // 
@@ -135,7 +135,7 @@
             this.colRoadName.Name = "colRoadName";
             this.colRoadName.Visible = true;
             this.colRoadName.VisibleIndex = 2;
-            this.colRoadName.Width = 109;
+            this.colRoadName.Width = 125;
             // 
             // colRoadLength
             // 
@@ -151,7 +151,7 @@
             this.colRoadLength.Name = "colRoadLength";
             this.colRoadLength.Visible = true;
             this.colRoadLength.VisibleIndex = 3;
-            this.colRoadLength.Width = 109;
+            this.colRoadLength.Width = 125;
             // 
             // colWoredaLength
             // 
@@ -167,7 +167,7 @@
             this.colWoredaLength.Name = "colWoredaLength";
             this.colWoredaLength.Visible = true;
             this.colWoredaLength.VisibleIndex = 4;
-            this.colWoredaLength.Width = 109;
+            this.colWoredaLength.Width = 125;
             // 
             // colWoredaPopulation
             // 
@@ -183,7 +183,7 @@
             this.colWoredaPopulation.Name = "colWoredaPopulation";
             this.colWoredaPopulation.Visible = true;
             this.colWoredaPopulation.VisibleIndex = 5;
-            this.colWoredaPopulation.Width = 109;
+            this.colWoredaPopulation.Width = 125;
             // 
             // colPopulationServed
             // 
@@ -199,7 +199,7 @@
             this.colPopulationServed.Name = "colPopulationServed";
             this.colPopulationServed.Visible = true;
             this.colPopulationServed.VisibleIndex = 6;
-            this.colPopulationServed.Width = 109;
+            this.colPopulationServed.Width = 128;
             // 
             // ribbonControl
             // 

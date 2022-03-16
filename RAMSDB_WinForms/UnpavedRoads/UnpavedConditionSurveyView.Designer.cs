@@ -70,6 +70,13 @@
             DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon18 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
             DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon19 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
             DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon20 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule6 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleIconSet formatConditionRuleIconSet6 = new DevExpress.XtraEditors.FormatConditionRuleIconSet();
+            DevExpress.XtraEditors.FormatConditionIconSet formatConditionIconSet6 = new DevExpress.XtraEditors.FormatConditionIconSet();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon21 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon22 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon23 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon24 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
             this.colSurfaceCondition = new DevExpress.XtraGrid.Columns.GridColumn();
             this.conditionEdit = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.conditionBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -77,6 +84,7 @@
             this.colDrainageConditionRight = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colShoulderConditionLeft = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colShoulderConditionRight = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGravelThicknessFactor = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
@@ -123,7 +131,6 @@
             this.colSurfaceType = new DevExpress.XtraGrid.Columns.GridColumn();
             this.editRoadSurfaceType = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.roadSurfaceTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colGravelThicknessFactor = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBottleneck = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBottleneckSize = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colXBegin = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -269,6 +276,20 @@
             this.colShoulderConditionRight.Visible = true;
             this.colShoulderConditionRight.VisibleIndex = 9;
             this.colShoulderConditionRight.Width = 94;
+            // 
+            // colGravelThicknessFactor
+            // 
+            this.colGravelThicknessFactor.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.colGravelThicknessFactor.AppearanceHeader.Options.UseFont = true;
+            this.colGravelThicknessFactor.AppearanceHeader.Options.UseTextOptions = true;
+            this.colGravelThicknessFactor.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colGravelThicknessFactor.ColumnEdit = this.conditionEdit;
+            this.colGravelThicknessFactor.FieldName = "GravelThicknessFactor";
+            this.colGravelThicknessFactor.MinWidth = 25;
+            this.colGravelThicknessFactor.Name = "colGravelThicknessFactor";
+            this.colGravelThicknessFactor.Visible = true;
+            this.colGravelThicknessFactor.VisibleIndex = 10;
+            this.colGravelThicknessFactor.Width = 94;
             // 
             // ribbonControl
             // 
@@ -502,7 +523,7 @@
             this.lblLength.Name = "lblLength";
             this.lblLength.Size = new System.Drawing.Size(207, 20);
             this.lblLength.Text = "lblLength";
-            this.lblLength.TextSize = new System.Drawing.Size(113, 16);
+            this.lblLength.TextSize = new System.Drawing.Size(115, 16);
             // 
             // lblWoreda
             // 
@@ -515,7 +536,7 @@
             this.lblWoreda.Name = "lblWoreda";
             this.lblWoreda.Size = new System.Drawing.Size(205, 21);
             this.lblWoreda.Text = "lblWoreda";
-            this.lblWoreda.TextSize = new System.Drawing.Size(113, 16);
+            this.lblWoreda.TextSize = new System.Drawing.Size(115, 16);
             // 
             // lblZone
             // 
@@ -529,7 +550,7 @@
             this.lblZone.Name = "lblZone";
             this.lblZone.Size = new System.Drawing.Size(205, 20);
             this.lblZone.Text = "lblZone";
-            this.lblZone.TextSize = new System.Drawing.Size(113, 16);
+            this.lblZone.TextSize = new System.Drawing.Size(115, 16);
             // 
             // lblRoadSurfaceType
             // 
@@ -542,7 +563,7 @@
             this.lblRoadSurfaceType.Name = "lblRoadSurfaceType";
             this.lblRoadSurfaceType.Size = new System.Drawing.Size(207, 21);
             this.lblRoadSurfaceType.Text = "lblRoadSurfaceType";
-            this.lblRoadSurfaceType.TextSize = new System.Drawing.Size(113, 16);
+            this.lblRoadSurfaceType.TextSize = new System.Drawing.Size(115, 16);
             // 
             // lblRoadDensity
             // 
@@ -555,7 +576,7 @@
             this.lblRoadDensity.Name = "lblRoadDensity";
             this.lblRoadDensity.Size = new System.Drawing.Size(207, 21);
             this.lblRoadDensity.Text = "lblRoadDensity";
-            this.lblRoadDensity.TextSize = new System.Drawing.Size(113, 16);
+            this.lblRoadDensity.TextSize = new System.Drawing.Size(115, 16);
             // 
             // lblRoadClassification
             // 
@@ -568,7 +589,7 @@
             this.lblRoadClassification.Name = "lblRoadClassification";
             this.lblRoadClassification.Size = new System.Drawing.Size(207, 20);
             this.lblRoadClassification.Text = "lblRoadClassification";
-            this.lblRoadClassification.TextSize = new System.Drawing.Size(113, 16);
+            this.lblRoadClassification.TextSize = new System.Drawing.Size(115, 16);
             // 
             // simpleSeparator2
             // 
@@ -590,8 +611,8 @@
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Size = new System.Drawing.Size(205, 20);
-            this.simpleLabelItem1.Text = "Zone";
-            this.simpleLabelItem1.TextSize = new System.Drawing.Size(113, 16);
+            this.simpleLabelItem1.Text = "Maintenance Branch";
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(115, 16);
             // 
             // simpleLabelItem2
             // 
@@ -600,7 +621,7 @@
             this.simpleLabelItem2.Name = "simpleLabelItem2";
             this.simpleLabelItem2.Size = new System.Drawing.Size(205, 21);
             this.simpleLabelItem2.Text = "Woreda";
-            this.simpleLabelItem2.TextSize = new System.Drawing.Size(113, 16);
+            this.simpleLabelItem2.TextSize = new System.Drawing.Size(115, 16);
             // 
             // simpleLabelItem3
             // 
@@ -609,7 +630,7 @@
             this.simpleLabelItem3.Name = "simpleLabelItem3";
             this.simpleLabelItem3.Size = new System.Drawing.Size(202, 20);
             this.simpleLabelItem3.Text = "Length";
-            this.simpleLabelItem3.TextSize = new System.Drawing.Size(113, 16);
+            this.simpleLabelItem3.TextSize = new System.Drawing.Size(115, 16);
             // 
             // simpleLabelItem4
             // 
@@ -618,7 +639,7 @@
             this.simpleLabelItem4.Name = "simpleLabelItem4";
             this.simpleLabelItem4.Size = new System.Drawing.Size(202, 21);
             this.simpleLabelItem4.Text = "Surface Type";
-            this.simpleLabelItem4.TextSize = new System.Drawing.Size(113, 16);
+            this.simpleLabelItem4.TextSize = new System.Drawing.Size(115, 16);
             // 
             // simpleLabelItem5
             // 
@@ -627,7 +648,7 @@
             this.simpleLabelItem5.Name = "simpleLabelItem5";
             this.simpleLabelItem5.Size = new System.Drawing.Size(201, 20);
             this.simpleLabelItem5.Text = "Classification";
-            this.simpleLabelItem5.TextSize = new System.Drawing.Size(113, 16);
+            this.simpleLabelItem5.TextSize = new System.Drawing.Size(115, 16);
             // 
             // simpleLabelItem6
             // 
@@ -636,7 +657,7 @@
             this.simpleLabelItem6.Name = "simpleLabelItem6";
             this.simpleLabelItem6.Size = new System.Drawing.Size(201, 21);
             this.simpleLabelItem6.Text = "Road Density";
-            this.simpleLabelItem6.TextSize = new System.Drawing.Size(113, 16);
+            this.simpleLabelItem6.TextSize = new System.Drawing.Size(115, 16);
             // 
             // gridControl1
             // 
@@ -881,11 +902,51 @@
             formatConditionIconSet5.ValueType = DevExpress.XtraEditors.FormatConditionValueType.Number;
             formatConditionRuleIconSet5.IconSet = formatConditionIconSet5;
             gridFormatRule5.Rule = formatConditionRuleIconSet5;
+            gridFormatRule6.Column = this.colGravelThicknessFactor;
+            gridFormatRule6.Name = "Format5";
+            formatConditionIconSet6.CategoryName = "Ratings";
+            formatConditionIconSetIcon21.PredefinedName = "Rating4_4.png";
+            formatConditionIconSetIcon21.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            formatConditionIconSetIcon21.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSetIcon22.PredefinedName = "Rating4_3.png";
+            formatConditionIconSetIcon22.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            formatConditionIconSetIcon22.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSetIcon23.PredefinedName = "Rating4_2.png";
+            formatConditionIconSetIcon23.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            formatConditionIconSetIcon23.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSetIcon24.PredefinedName = "Rating4_1.png";
+            formatConditionIconSetIcon24.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            formatConditionIconSetIcon24.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSet6.Icons.Add(formatConditionIconSetIcon21);
+            formatConditionIconSet6.Icons.Add(formatConditionIconSetIcon22);
+            formatConditionIconSet6.Icons.Add(formatConditionIconSetIcon23);
+            formatConditionIconSet6.Icons.Add(formatConditionIconSetIcon24);
+            formatConditionIconSet6.Name = "Ratings4";
+            formatConditionIconSet6.ValueType = DevExpress.XtraEditors.FormatConditionValueType.Number;
+            formatConditionRuleIconSet6.IconSet = formatConditionIconSet6;
+            gridFormatRule6.Rule = formatConditionRuleIconSet6;
             this.gridView1.FormatRules.Add(gridFormatRule1);
             this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.FormatRules.Add(gridFormatRule3);
             this.gridView1.FormatRules.Add(gridFormatRule4);
             this.gridView1.FormatRules.Add(gridFormatRule5);
+            this.gridView1.FormatRules.Add(gridFormatRule6);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.NewItemRowText = "Click here to add a new condition survey for the selected road";
@@ -962,7 +1023,7 @@
             this.colSectionChainageStartKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionChainageStartKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionChainageStartKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colSectionChainageStartKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];";
+            this.colSectionChainageStartKM.DisplayFormat.FormatString = "#,###0.00;[#,###0.0];";
             this.colSectionChainageStartKM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSectionChainageStartKM.FieldName = "SectionChainageStartKM";
             this.colSectionChainageStartKM.MinWidth = 25;
@@ -977,7 +1038,7 @@
             this.colSectionChainageEndKM.AppearanceHeader.Options.UseFont = true;
             this.colSectionChainageEndKM.AppearanceHeader.Options.UseTextOptions = true;
             this.colSectionChainageEndKM.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colSectionChainageEndKM.DisplayFormat.FormatString = "#,###.00;[#,###.0];";
+            this.colSectionChainageEndKM.DisplayFormat.FormatString = "#,###0.00;[#,###0.0];";
             this.colSectionChainageEndKM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSectionChainageEndKM.FieldName = "SectionChainageEndKM";
             this.colSectionChainageEndKM.MinWidth = 25;
@@ -1032,20 +1093,6 @@
             // roadSurfaceTypeBindingSource
             // 
             this.roadSurfaceTypeBindingSource.DataSource = typeof(RAMSDBModel.RoadSurfaceType);
-            // 
-            // colGravelThicknessFactor
-            // 
-            this.colGravelThicknessFactor.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.colGravelThicknessFactor.AppearanceHeader.Options.UseFont = true;
-            this.colGravelThicknessFactor.AppearanceHeader.Options.UseTextOptions = true;
-            this.colGravelThicknessFactor.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colGravelThicknessFactor.ColumnEdit = this.conditionEdit;
-            this.colGravelThicknessFactor.FieldName = "GravelThicknessFactor";
-            this.colGravelThicknessFactor.MinWidth = 25;
-            this.colGravelThicknessFactor.Name = "colGravelThicknessFactor";
-            this.colGravelThicknessFactor.Visible = true;
-            this.colGravelThicknessFactor.VisibleIndex = 10;
-            this.colGravelThicknessFactor.Width = 94;
             // 
             // colBottleneck
             // 

@@ -91,6 +91,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.unpavedRoadConditionSurveyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMaintenanceBranch = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRCSYear = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colYear = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRoadIDMain = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -452,6 +453,7 @@
             this.gridView1.Appearance.ViewCaption.Options.UseTextOptions = true;
             this.gridView1.Appearance.ViewCaption.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMaintenanceBranch,
             this.colRCSYear,
             this.colYear,
             this.colRoadIDMain,
@@ -706,11 +708,25 @@
             this.gridView1.OptionsView.ColumnAutoWidth = false;
             this.gridView1.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colWoreda, DevExpress.Data.ColumnSortOrder.Ascending),
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colMaintenanceBranch, DevExpress.Data.ColumnSortOrder.Ascending),
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colZone, DevExpress.Data.ColumnSortOrder.Ascending),
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colRoadID, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.gridView1.CustomUnboundColumnData += new DevExpress.XtraGrid.Views.Base.CustomColumnDataEventHandler(this.GridView_UnboundColumns);
             this.gridView1.DoubleClick += new System.EventHandler(this.GridView_RowDoubleClick);
+            // 
+            // colMaintenanceBranch
+            // 
+            this.colMaintenanceBranch.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.colMaintenanceBranch.AppearanceHeader.Options.UseFont = true;
+            this.colMaintenanceBranch.AppearanceHeader.Options.UseTextOptions = true;
+            this.colMaintenanceBranch.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colMaintenanceBranch.Caption = "Maintenance Branch";
+            this.colMaintenanceBranch.FieldName = "RoadsGISData.MaintenanceBranch.MaintenanceBranch1";
+            this.colMaintenanceBranch.MinWidth = 25;
+            this.colMaintenanceBranch.Name = "colMaintenanceBranch";
+            this.colMaintenanceBranch.Visible = true;
+            this.colMaintenanceBranch.VisibleIndex = 0;
+            this.colMaintenanceBranch.Width = 94;
             // 
             // colRCSYear
             // 
@@ -767,8 +783,6 @@
             this.colZone.MinWidth = 25;
             this.colZone.Name = "colZone";
             this.colZone.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText;
-            this.colZone.Visible = true;
-            this.colZone.VisibleIndex = 1;
             this.colZone.Width = 133;
             // 
             // colWoreda
@@ -782,6 +796,8 @@
             this.colWoreda.MinWidth = 25;
             this.colWoreda.Name = "colWoreda";
             this.colWoreda.SortMode = DevExpress.XtraGrid.ColumnSortMode.Value;
+            this.colWoreda.Visible = true;
+            this.colWoreda.VisibleIndex = 1;
             this.colWoreda.Width = 171;
             // 
             // colRoadID
@@ -985,8 +1001,6 @@
             this.colGravelThicknessFactor.FieldName = "GravelThicknessFactor";
             this.colGravelThicknessFactor.MinWidth = 25;
             this.colGravelThicknessFactor.Name = "colGravelThicknessFactor";
-            this.colGravelThicknessFactor.Visible = true;
-            this.colGravelThicknessFactor.VisibleIndex = 13;
             this.colGravelThicknessFactor.Width = 94;
             // 
             // colBottleneck
@@ -1175,5 +1189,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colGravelThicknessFactor;
         private System.Windows.Forms.ComboBox cboYear;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaintenanceBranch;
     }
 }

@@ -16,6 +16,8 @@ namespace RAMSDB.Data
 
         public string Zone { get; set; }
         public string Woreda { get; set; }
+
+        public string MaintenanceBranch { get; set; }
         public string OriginDestination { get; set; }
         public decimal RoadLength { get; set; }
         public string Classification { get; set; }
@@ -31,6 +33,8 @@ namespace RAMSDB.Data
         public int TCYear { get; set; }
         public string Zone { get; set; }
         public string Woreda { get; set; }
+
+        public string MaintenanceBranch { get; set; }
         public string RoadOriginDestination { get; set; }
         public decimal BenefitFactor { get; set; }
         public decimal TrafficPerDay { get; set; }
@@ -72,6 +76,8 @@ namespace RAMSDB.Data
         public int AdminID { get; set; }
         public string Zone { get; set; }
         public string Woreda { get; set; }
+
+        public string MaintenanceBranch { get; set; }
         public string OriginDestination { get; set; }
         public decimal RoadLength { get; set; }
         public decimal RoadLengthWoredaTotal { get; set; }
@@ -86,6 +92,8 @@ namespace RAMSDB.Data
         public int AdminID { get; set; }
         public string Zone { get; set; }
         public string Woreda { get; set; }
+
+        public string MaintenanceBranch { get; set; }
         public string RoadOriginDestination { get; set; }
         public string RoadSurfaceType { get; set; }
         public string RoadClass { get; set; }
@@ -183,6 +191,7 @@ namespace RAMSDB.Data
                                     AdminID = r.AdminID,
                                     Zone = r.AdminBoundary.ZoneName,
                                     Woreda = r.AdminBoundary.WoredaName,
+                                    MaintenanceBranch = r.RoadsGISData.MaintenanceBranch.MaintenanceBranch1,
                                     OriginDestination = r.RoadsGISData.RoadOriginDestination,
                                     RoadLength = (decimal)r.RoadsGISData.RoadLengthInKm,
 
@@ -345,6 +354,7 @@ namespace RAMSDB.Data
                                   TCYear = (int)tc.TcYear,
                                   Zone = perUser.AdminBoundary.ZoneName,
                                   Woreda = perUser.AdminBoundary.WoredaName,
+                                  MaintenanceBranch = perUser.RoadsGISData.MaintenanceBranch.MaintenanceBranch1,
                                   RoadOriginDestination = rgis.RoadOriginDestination,
                                   BenefitFactor = (decimal)
                                           (co._TradingCenterScore +
@@ -546,6 +556,7 @@ namespace RAMSDB.Data
                                   TCYear = (int)tc.TcYear,
                                   Zone = perUser.AdminBoundary.ZoneName,
                                   Woreda = perUser.AdminBoundary.WoredaName,
+                                  MaintenanceBranch = perUser.RoadsGISData.MaintenanceBranch.MaintenanceBranch1,
                                   RoadOriginDestination = rgis.RoadOriginDestination,
                                   BenefitFactor = (decimal)
                                           (co._TradingCenterScore +
@@ -692,6 +703,7 @@ namespace RAMSDB.Data
                                TotalCost = (decimal)t.TotalCost,
                                Zone = rs.AdminBoundary.ZoneName,
                                Woreda = rs.AdminBoundary.WoredaName,
+                               MaintenanceBranch = rs.RoadsGISData.MaintenanceBranch.MaintenanceBranch1,
                                OriginDestination = ls.RoadOriginDestination,
                                RoadLength = (decimal)ls.RoadLengthInKm,
                                Classification = ls.RoadClassification.RoadClassificationDescription,
@@ -811,7 +823,7 @@ namespace RAMSDB.Data
                                     AdminID = c.AdminID,
                                     Zone = c.Zone,
                                     Woreda = c.Woreda,
-
+                                    MaintenanceBranch = c.MaintenanceBranch,
                                     RoadOriginDestination = c.OriginDestination,
                                     RoadSurfaceType = c.SurfaceType,
                                     RoadClass = c.Classification,

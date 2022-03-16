@@ -57,11 +57,15 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::RAMSDB_WinForms.WaitForm1), true, true, typeof(System.Windows.Forms.UserControl));
+            this.colMaintenanceBranch = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prioritizedRoadsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).BeginInit();
+            this.gridSplitContainer1.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).BeginInit();
             this.gridSplitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,6 +175,7 @@
             this.colRoadID,
             this.colAdminID,
             this.colZoe,
+            this.colMaintenanceBranch,
             this.Woreda,
             this.colRoadOriginDestination,
             this.colRoadSurfaceType,
@@ -243,8 +248,6 @@
             this.colZoe.FieldName = "Zone";
             this.colZoe.MinWidth = 25;
             this.colZoe.Name = "colZoe";
-            this.colZoe.Visible = true;
-            this.colZoe.VisibleIndex = 0;
             this.colZoe.Width = 94;
             // 
             // Woreda
@@ -409,6 +412,9 @@
             this.gridSplitContainer1.Grid = this.gridControl1;
             this.gridSplitContainer1.Location = new System.Drawing.Point(0, 148);
             this.gridSplitContainer1.Name = "gridSplitContainer1";
+            // 
+            // gridSplitContainer1.Panel1
+            // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.cboYear);
             this.gridSplitContainer1.Panel1.Controls.Add(this.labelControl3);
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
@@ -418,6 +424,19 @@
             // splashScreenManager1
             // 
             this.splashScreenManager1.ClosingDelay = 500;
+            // 
+            // colMaintenanceBranch
+            // 
+            this.colMaintenanceBranch.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.colMaintenanceBranch.AppearanceHeader.Options.UseFont = true;
+            this.colMaintenanceBranch.AppearanceHeader.Options.UseTextOptions = true;
+            this.colMaintenanceBranch.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colMaintenanceBranch.FieldName = "MaintenanceBranch";
+            this.colMaintenanceBranch.MinWidth = 25;
+            this.colMaintenanceBranch.Name = "colMaintenanceBranch";
+            this.colMaintenanceBranch.Visible = true;
+            this.colMaintenanceBranch.VisibleIndex = 0;
+            this.colMaintenanceBranch.Width = 120;
             // 
             // UnpavedPrioritizedRoads
             // 
@@ -433,6 +452,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prioritizedRoadsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).EndInit();
+            this.gridSplitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
             this.gridSplitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -469,5 +491,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaintenanceBranch;
     }
 }
